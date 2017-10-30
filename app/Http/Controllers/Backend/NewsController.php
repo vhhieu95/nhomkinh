@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Backend;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\News;
+use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
@@ -14,7 +15,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $news = News::select('id', 'title', 'content')->get();
+        return view('backend.news.index', compact('news'));
     }
 
     /**

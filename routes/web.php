@@ -11,4 +11,7 @@
 |
 */
 
-Route::resource('/news', 'NewsController');
+Route::group(['namespace' => 'Backend'],function() {
+    Route::get('/nhomkinhadmin', 'HomeController@index')->name('admin.index');
+    Route::resource('news', 'NewsController');
+});
