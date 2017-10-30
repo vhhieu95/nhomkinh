@@ -1,0 +1,14 @@
+{
+  "name": "Project",
+  "description": "My project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.4.2"
+  }
+}
