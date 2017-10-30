@@ -14,7 +14,7 @@ class ProjectsTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        factory(App\Model\Project::class, 15)->create();
+        factory(App\Model\Project::class, 100)->create();
         Model::reguard();
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
 class NewsTableSeeder extends Seeder
@@ -11,6 +12,8 @@ class NewsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Model::unguard();
+        factory(App\Model\News::class, 1)->create();
+        Model::reguard();
     }
 }
