@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 Route::get('/admin', function () {
     return view('backend.home.index');
-});
+})->name('admin.index');

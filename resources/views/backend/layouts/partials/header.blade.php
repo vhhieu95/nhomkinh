@@ -1,5 +1,5 @@
 <header class="main-header">
-    <a href="" class="logo">
+    <a href="{{ route('admin.index') }}" class="logo">
       <span class="logo-mini"><b>{{ __('Ad') }}</b></span>
       <span class="logo-lg"><b>{{ __('Admin') }}</b></span>
     </a>
@@ -85,31 +85,31 @@
             </ul>
           </li>
           <li class="dropdown user user-menu">
-            {{-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{ Auth::user()->path == null ? asset('img/default1.jpg') : asset(Auth::user()->path) }}" class="user-image" alt="User Image">
-              <span class="hidden-xs">{{ Auth::user()->full_name }}</span>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="{{-- {{ Auth::user()->path == null ? asset('img/default1.jpg') : asset(Auth::user()->path) }} --}}" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{-- {{ Auth::user()->full_name }} --}}</span>
             </a>
             <ul class="dropdown-menu">
               <li class="user-header">
-                <img src="{{ Auth::user()->path == null ? asset('img/default1.jpg') : asset(Auth::user()->path) }}" class="img-circle" alt="User Image">
+                <img src="{{-- {{ Auth::user()->path == null ? asset('img/default1.jpg') : asset(Auth::user()->path) }} --}}" class="img-circle" alt="User Image">
 
                 <p>
-                  {{ Auth::user()->full_name }}
-                  <small>{{ Auth::user()->created_at }}</small>
+                  {{-- {{ Auth::user()->full_name }}
+                  <small>{{ Auth::user()->created_at }}</small> --}}
                 </p>
               </li>
               <li class="user-footer">
                 <div class="pull-left">
                   <a href="#" class="btn btn-primary">Profile</a>
                 </div>
-                <form action="{{ route('logout') }}" class="pull-right" method="POST">
-                  {{csrf_field()}}
+                <form action="{{-- {{ route('logout') }} --}}" class="pull-right" method="POST">
+                  {{-- {{csrf_field()}} --}}
                   <button type="submit" class="btn btn-primary"  name="logout">
                     {{__('Log out')}}
                   </button>
                 </form>
               </li>
-            </ul> --}}
+            </ul>
           </li>
         </ul>
       </div>
