@@ -47,3 +47,6 @@ Route::get('lienhe', function () {
 Route::get('gioithieu', function () {
     return view('frontend.about-us.index');
 });
+Route::get('/admin', function () {
+    return view('backend.home.index');
+})->name('admin.index');
