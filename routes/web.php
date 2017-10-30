@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['namespace' => 'Backend'],function() {
+Route::group(['namespace' => 'Backend', 'prefix' => 'admin'],function() {
 	Route::get('/nhomkinhadmin', 'HomeController@index')->name('admin.index');
 });
 
