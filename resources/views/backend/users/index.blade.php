@@ -20,7 +20,7 @@
                 <h3 class="box-title title-header">{{ __('Danh sách người dùng') }}</h3>
               </div>  
               <div class="row">
-                <div class="">
+                <div class="col-xs-12">
                   <a class="btn btn-primary pull-right" href="{{ route('users.create')}}">
                   <span class="fa fa-plus-circle"></span>
                   {{ __('Thêm người dùng') }}
@@ -76,7 +76,7 @@
                 {{__('Dữ liệu không tìm thấy')}}
               </div>
               <div class="contain-btn second">
-                <a class="btn btn-primary" href="{{ route('users.create')}}">
+                <a class="btn btn-primary pull-right" href="{{ route('users.create')}}">
                   <span class="fa fa-plus-circle"></span>
                   {{ __('Thêm người dùng') }}
                 </a>
