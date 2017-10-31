@@ -51,8 +51,9 @@ $factory->define(App\Model\News::class, function (Faker $faker) {
 $factory->define(App\Model\Project::class, function (Faker $faker) {
 
     return [
-        'name' => $faker->sentence,
+        'title' => $faker->sentence,
         'description' => $faker->text,
+        'content' => $faker->text,
     ];
 });
 
