@@ -103,7 +103,7 @@ class IntroduceController extends Controller
         $introduce = Introduction::findOrFail($id)->delete();
         if ($introduce) {
             flash(__('Xóa Giới Thiệu thành công!'))->success();
-            return redirect()->route('projects.index');
+            return redirect()->route('introduces.index');
         } else {
             flash(__('Xóa Giới Thiệu thất bại!'))->error();
             return redirect()->route('introduces.index');

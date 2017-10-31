@@ -18,4 +18,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() 
     Route::resource('news', 'NewsController');
     Route::resource('projects', 'ProjectController');
     Route::resource('introduces', 'IntroduceController');
+    Route::resource('contacts', 'ContactController', ['only' => [
+        'index', 'show', 'destroy'
+    ]]);
 });
