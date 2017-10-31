@@ -12,9 +12,10 @@
 */
 
 Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() {
-	Route::get('/home', 'HomeController@index')->name('admin.index');
-	Route::resource('/users', 'UserController');
+    Route::get('/home', 'HomeController@index')->name('admin.index');
+    Route::resource('/users', 'UserController');
     Route::resource('/categories', 'CategoryController');
     Route::resource('news', 'NewsController');
     Route::resource('projects', 'ProjectController');
+    Route::resource('introduces', 'IntroduceController');
 });
