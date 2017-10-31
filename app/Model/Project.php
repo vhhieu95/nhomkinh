@@ -23,7 +23,7 @@ class Project extends Model
      * @var array $fillable
      */
     protected $fillable = [
-        'name', 'description'
+        'id', 'title', 'description', 'content', 'image',
     ];
 
     /**
@@ -35,8 +35,24 @@ class Project extends Model
     {
         return [
             'slug' => [
-                'source' => 'name'
+                'source' => 'title'
             ]
         ];
+    }
+
+    /**
+     * Get Image Attribute
+     *
+     * @param string $image get attribute image
+     *
+     * @return string
+     */
+    public function getImageAttribute($image)
+    {
+        if ($image) {
+            return asset(config('constant.path_upload_projects') . $image);
+        } else {
+            return asset(config('constant.default_image'));
+        }
     }
 }
