@@ -17,7 +17,7 @@
         <div class="col-md-12">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title lead">{{ __('Enter information') }}</h3>
+              <h3 class="box-title lead">{{ __('Nhập thông tin') }}</h3>
             </div>
             <form role="form" method="POST" action="{{ route('users.store') }}">
               {!! csrf_field() !!}
@@ -45,10 +45,10 @@
               </div>
               <div class="box-footer">
                 <a href="{{ route('users.index') }}">
-                  <button type="button" class="btn btn-default">{{ __('Back') }}</button>
+                  <button type="button" class="btn btn-default">{{ __('Trở về') }}</button>
                 </a>
-                <button type="reset" class="btn btn-warning">{{ __('Reset') }}</button>
-                <button type="submit" class="btn btn-primary pull-right">{{ __('Submit') }}</button>
+                <button type="reset" class="btn btn-warning">{{ __('Nhập lại') }}</button>
+                <button type="submit" class="btn btn-primary pull-right">{{ __('Xác nhận') }}</button>
               </div>
             </form>
           </div>

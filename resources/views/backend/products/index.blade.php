@@ -41,9 +41,9 @@
                 <tr>
                   <th class="col-md-1">{{ __('ID') }}</th>
                   <th>{{ __('Hình ảnh') }}</th>
-                  <th>{{ __('Tên sản phẩm') }}</th>
+                  <th class="col-md-2">{{ __('Tên sản phẩm') }}</th>
                   <th>{{ __('Mô tả') }}</th>
-                  <th class="col-md-2 text-center">{{ __('Tùy chọn') }}</th>
+                  <th class="col-md-1 text-center">{{ __('Tùy chọn') }}</th>
                 </tr>
                 </thead>
                 <tbody>

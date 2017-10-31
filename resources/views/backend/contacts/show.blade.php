@@ -23,7 +23,7 @@
                     <span class="mailbox-read-time pull-right">{{ $contact->created_at }}</span>
                   </h4>
                 </div>
-                <div class="">
+                <div class="mailbox-read-info">
                     <h3>{{ $contact->subject }}</h3>
                 </div>
                 <div class="mailbox-read-message">

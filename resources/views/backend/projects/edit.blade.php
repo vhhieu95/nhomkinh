@@ -53,14 +53,12 @@
               <div class="box-footer">
                 <div class="btn-edit-news">
                   <a href="{{ route('projects.index') }}" class="btn btn-default">
-                    {{__('Back')}}
+                    {{__('Trở về')}}
                   </a>                
                   <button type="reset" class="btn btn-warning">
-                    {{__('Reset')}}
+                    {{__('Nhập lại')}}
                   </button> 
-                </div>
-                <div class="edit-news-submit pull-right">
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary pull-right">
                     {{__('Thay đổi ')}} 
                   </button>
                 </div>
