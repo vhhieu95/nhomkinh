@@ -13,5 +13,7 @@
 Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() {
 	Route::get('/home', 'HomeController@index')->name('admin.index');
     Route::resource('/categories', 'CategoryController');
+    Route::resource('/products', 'ProductController');
+    Route::resource('/image', 'ImageController', ['only' => ['destroy']]);
 });
 

@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use App\Model\Product;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -26,6 +27,7 @@ class Category extends Model
         'name'
     ];
 
+    const ROW_LIMIT = 10;
     /**
      * Return the sluggable configuration array for this model.
      *
@@ -38,5 +40,15 @@ class Category extends Model
                 'source' => 'name'
             ]
         ];
+    }
+
+    /**
+     * Return the news configuration array for this model.
+     *
+     * @return array
+    */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
     }
 }

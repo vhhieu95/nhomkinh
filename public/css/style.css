@@ -1,0 +1,48 @@
+.mr-10 {
+    margin-right: 10px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-16 {
+    font-size: 16px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mlr-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.ml-5per {
+    margin-left: 5%;
+}
+.ml-2per {
+    margin-left: 2%;
+}
+.mt-10{ 
+    margin-top: 10px;
+}
+.pd-0 {
+    padding: 0;
+}
+
+.img-product{
+    max-width: 145px;
+    height: 100px;
+}
+.btn-remove-img {
+    position: absolute;
+    color: #3e3d3d;
+    background: white;
+    border-radius: 6px;
+}
+.img-contain {
+    position: relative;
+}

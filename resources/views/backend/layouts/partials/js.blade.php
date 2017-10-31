@@ -18,6 +18,7 @@
 
 
 <link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.css') }}">
+<link rel="stylesheet" href="{{asset('css/style.css') }}">
 
 <!-- Daterange picker -->
 <link rel="stylesheet" href="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
@@ -52,3 +53,4 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('bower_components/AdminLTE/dist/js/demo.js') }}"></script>
 <script src="{{asset('backend/main.js') }}"></script>
+<script src="{{ asset('bower_components/ckeditor/ckeditor.js') }}"></script>

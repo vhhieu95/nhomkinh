@@ -2,6 +2,7 @@
 
 namespace  App\Model;
 
+use App\Model\Category;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -26,6 +27,8 @@ class Product extends Model
         'name', 'description', 'category_id'
     ];
 
+    const ROW_LIMIT = 10;
+    
     /**
      * Return the sluggable configuration array for this model.
      *
@@ -38,5 +41,25 @@ class Product extends Model
                 'source' => 'name'
             ]
         ];
+    }
+
+    /**
+     * Relationship with news's image
+     *
+     * @return array
+     */
+    public function images()
+    {
+        return $this->morphMany(Image::class, 'imageable', 'target', 'target_id');
+    }
+
+    /**
+     * News belongs to a Category.
+     *
+     * @return Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
     }
 }

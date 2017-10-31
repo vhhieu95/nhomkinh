@@ -22,7 +22,7 @@ class CategoryController extends Controller
         ];
 
         $categories = Category::select($columns)
-            ->orderby('id', 'DESC')->paginate(10);
+            ->orderby('id', 'DESC')->paginate(Category::ROW_LIMIT);
 
         return view('backend.categories.index', compact('categories'));
     }
@@ -34,7 +34,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-         return view('backend.categories.create');
+        return view('backend.categories.create');
     }
 
     /**
@@ -47,22 +47,11 @@ class CategoryController extends Controller
     {
         $category = new Category($request->all());
         if ($category->save()) {
-            flash(__('Create Success'))->success();
+            flash(__('Thêm danh mục thành công'))->success();
         } else {
-            flash(__('Create Fail'))->error();
+            flash(__('Lỗi trong quá trình thêm danh mục'))->error();
         }
         return redirect()->route('categories.index');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**
@@ -86,9 +75,9 @@ class CategoryController extends Controller
     public function update(UpdateCategoryRequest $request, Category $category)
     {
         if ($category->update($request->all())) {
-            flash(__('Update Success'))->success();
+            flash(__('Sửa danh mục thành công'))->success();
         } else {
-            flash(__('Update Fail'))->error();
+            flash(__('Sửa danh mục lỗi'))->error();
         }
         return redirect()->route('categories.index');
     }
@@ -103,9 +92,9 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         if ($category->delete()) {
-            flash(__('Delete Success'))->success();
+            flash(__('Xóa thành công'))->success();
         } else {
-            flash(__('Delete Fail'))->error();
+            flash(__('Xóa thất bại'))->error();
         }
         return redirect()->route('categories.index');
     }

@@ -1,15 +1,15 @@
 @extends('backend.layouts.main')
-@section('title', 'Quản lý danh mục')
+@section('title', 'Quản lý sản phẩm')
 @section('content')
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        {{ __('Quản lý danh mục') }}
+        {{ __('Quản lý sản phẩm') }}
       </h1>
       <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i>{{ __('Trang chủ') }}</a></li>
-        <li class="active">{{ __('Danh mục') }}</li>
+        <li class="active">{{ __('Quản lý Sản phẩm') }}</li>
       </ol>
     </section>
 
@@ -20,13 +20,13 @@
           <div class="box">
             <div class="box-header">
               <div class="title-category mb-10">
-                <h3 class="box-title title-header">{{ __('Danh sách danh mục') }}</h3>
+                <h3 class="box-title title-header">{{ __('Danh sách sản phẩm') }}</h3>
               </div>  
               <div class="row">
                 <div class="contain-btn pull-right">
-                   <a href="{{ route('categories.create') }}" class="btn btn-primary">
+                   <a href="{{ route('products.create') }}" class="btn btn-primary">
                     <span class="fa fa-plus-circle" aria-hidden="true"></span>
-                    {{ __('Thêm danh mục') }}
+                    {{ __('Thêm sản phẩm') }}
                   </a> 
                 </div>
               </div>
@@ -40,20 +40,30 @@
                 <thead>
                 <tr>
                   <th class="col-md-1">{{ __('ID') }}</th>
-                  <th>{{ __('Tên danh mục') }}</th>
+                  <th>{{ __('Hình ảnh') }}</th>
+                  <th>{{ __('Tên sản phẩm') }}</th>
+                  <th>{{ __('Mô tả') }}</th>
                   <th class="col-md-2 text-center">{{ __('Tùy chọn') }}</th>
                 </tr>
                 </thead>
                 <tbody>
-                  @foreach ($categories as $category)
+                  @foreach ($products as $product)
                     <tr>
-                      <td>{{ $category->id }}</td>
-                      <td>{{ $category->name }}</td>
+                      <td>{{ $product->id }}</td>
+                      <td>
+                        @if (isset($product->images[0]))
+                          <img class="img-product" src="{{ asset($product->images[0]->path) }}" >
+                        @else   
+                          <img class="img-product" src="{{ asset(config('constant.default_image')) }}" >
+                        @endif
+                      </td>
+                      <td>{{ $product->name }}</td>
+                      <td>{{ strip_tags($product->description) }}</td>
                       <td align="center">
                         <div class="btn-option text-center">
-                          <a href="{{ route('categories.edit',$category->id) }}" 
+                          <a href="{{ route('products.edit',$product->id) }}" 
                             class= "btn-edit fa fa-pencil-square-o btn-custom-option pull-left"></a>
-                          <form method="POST" action="{{ route('categories.destroy', $category->id) }}"
+                          <form method="POST" action="{{ route('products.destroy', $product->id) }}"
                             class="form-del inline" >
                             {{ method_field('DELETE') }}
                             <input type="hidden" name="_token"  value="{!! csrf_token()!!}">
@@ -73,12 +83,12 @@
                 {{__('Không tìm thấy dữ liệu')}}
               </div>
               <div class="contain-btn second pull-right">
-                <a href="{{ route('categories.create') }}" class="btn btn-primary">
+                <a href="{{ route('products.create') }}" class="btn btn-primary">
                   <span class="fa fa-plus-circle" aria-hidden="true"></span>
-                  {{ __('Thêm danh mục') }}
+                  {{ __('Thêm sản phẩm ') }}
                 </a> 
               </div>
-              {{ $categories->render() }}
+              {{ $products->render() }}
             </div>
             
             <!-- /.box-body -->

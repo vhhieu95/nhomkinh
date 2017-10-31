@@ -16,10 +16,11 @@
           <i class="fa fa-dashboard"></i> <span>Users</span>
         </a>
       </li>
-      <li class="treeview">
-        <a href="#">
+      <li class="{{ areActiveRoute(['products.index','products.create', 'products.edit']) }}">
+        <a href="{{ route('products.index')}}">
+        <a href="{{ route('products.index')}}">
           <i class="fa fa-files-o"></i>
-          <span>Products</span>
+          <span>Sản phẩm</span>
         </a>
       </li>
       <li  class="{{ areActiveRoute(['categories.index','categories.create', 'categories.edit']) }}">
