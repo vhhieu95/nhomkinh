@@ -11,12 +11,12 @@
     </div>
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
-      <li class="treeview">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Users</span>
+      <li class="{{ isActiveRoute('users.index') }}">
+        <a href="{{ route('users.index') }}">
+          <i class="fa fa-dashboard"></i><span>Người dùng</span>
         </a>
       </li>
-      <li class="treeview">
+      <li class="">
         <a href="#">
           <i class="fa fa-files-o"></i>
           <span>Products</span>
@@ -27,24 +27,24 @@
           <i class="fa fa-th"></i> <span>Categories</span>
         </a>
       </li>
-      <li class="treeview">
+      <li class="">
         <a href="#">
           <i class="fa fa-pie-chart"></i>
           <span>Projects</span>
         </a>
       </li>
-      <li class="treeview">
+      <li class="">
         <a href="#">
           <i class="fa fa-laptop"></i>
           <span>News</span>
         </a>
       </li>
-      <li class="treeview {{ isActiveRoute('') }}">
+      <li class=" {{ isActiveRoute('') }}">
         <a href="#">
           <i class="fa fa-edit"></i> <span>Introduction</span>
         </a>
       </li>
-      <li class="treeview">
+      <li class="">
         <a href="#">
           <i class="fa fa-table"></i> <span>Contacts</span>
         </a>
