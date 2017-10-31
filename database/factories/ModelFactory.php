@@ -43,6 +43,7 @@ $factory->define(App\Model\News::class, function (Faker $faker) {
 
     return [
         'title' => $faker->sentence,
+        'description' => $faker->text,
         'content' => $faker->text,
     ];
 });
