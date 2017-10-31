@@ -16,11 +16,6 @@
           <i class="fa fa-dashboard"></i><span>Người dùng</span>
         </a>
       </li>
-      <li class="">
-        <a href="#">
-          <i class="fa fa-dashboard"></i> <span>Users</span>
-        </a>
-      </li>
       <li>
         <a href="#">
           <i class="fa fa-files-o"></i>
