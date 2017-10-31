@@ -16,4 +16,5 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() 
 	Route::resource('/users', 'UserController');
     Route::resource('/categories', 'CategoryController');
     Route::resource('news', 'NewsController');
+    Route::resource('projects', 'ProjectController');
 });
