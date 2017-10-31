@@ -19,7 +19,7 @@
             <div class="box-header with-border">
               <h3 class="box-title lead text-center">{{ __('Enter information') }}</h3>
             </div>
-            <form role="form" method="POST" action="{{ route('users.store') }}">
+            <form role="form" method="POST" action="{{ route('users.update', $user) }}">
               {!! csrf_field() !!}
               {{ method_field('PUT')}}
               <input type="hidden" name="id" value="{{ $user->id }}">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
                   <label for="password">{{ __('Mật khẩu') }}</label>
-                  <input type="password" class="form-control" name= "password" id="password" placeholder="{{ __('Vui lòng nhập mật khẩu') }}" >
+                  <input type="password" class="form-control" name= "password" id="password" placeholder="{{ __('Nhập mật khẩu nếu bạn muốn đổi mật khẩu') }}" >
                   <small class="text-danger">{{ $errors->first('password') }}</small>
                 </div>
                 <div class="form-group has-feedback {{ $errors->has('password_confirmation') ? ' has-error' : '' }}">

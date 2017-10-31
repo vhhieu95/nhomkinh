@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Backend;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 
-class EditUserRequest extends FormRequest
+class UpdateCategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +25,7 @@ class EditUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|unique:users,email,' .$this->id. ',id',
-            'name' => 'required|string',
-            'password' => 'nullable|min:4|confirmed'
+            'name' => 'required'  
         ];
     }
 }

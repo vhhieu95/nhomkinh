@@ -17,3 +17,21 @@ if (!function_exists('isActiveRoute')) {
         }
     }
 }
+
+if (!function_exists('areActiveRoute')) {
+
+    /**
+     * Active menu side bar when routes menu are current route
+     *
+     * @param Array  $routes routes action
+     * @param string $output active or ''
+     *
+     * @return string
+     */
+    function areActiveRoute(array $routes, $output = "active")
+    {
+        if (in_array(Route::currentRouteName(), $routes, true)) {
+            return $output;
+        }
+    }
+}
