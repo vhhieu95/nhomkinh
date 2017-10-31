@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Introduces\IntroduceCreateRequest;
+use App\Http\Requests\Introduces\IntroduceUpdateRequest;
 use App\Model\Introduction;
 use Illuminate\Http\Request;
 
@@ -26,7 +28,7 @@ class IntroduceController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.introduces.create');
     }
 
     /**
@@ -35,9 +37,17 @@ class IntroduceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(IntroduceCreateRequest $request)
     {
-        //
+        $introduces = new Introduction($request->all());
+        $result = $introduces->save();
+        if ($result) {
+            flash(__('Tạo trang giới thiệu thành công!'))->success();
+        } else {
+            flash(__('Tạo trang giới thiệu thất bại!'))->error();
+            return redirect()->back()->withInput();
+        }
+        return redirect()->route('introduces.index');
     }
 
     /**
@@ -59,7 +69,8 @@ class IntroduceController extends Controller
      */
     public function edit($id)
     {
-        //
+        $introduction = Introduction::findOrFail($id);
+        return view('backend.introduces.edit', compact('introduction'));
     }
 
     /**
@@ -69,9 +80,16 @@ class IntroduceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(IntroduceUpdateRequest $request, $id)
     {
-        //
+        $introduction = Introduction::findOrFail($id);
+        if ($introduction->update($request->all())) {
+            flash(__('Sửa giới thiệu thành công!'))->success();
+        } else {
+            flash(__('Sửa giới thiệu thất bại!'))->error();
+            return redirect()->back()->withInput();
+        }
+        return redirect()->route('introduces.index');
     }
 
     /**
@@ -82,6 +100,13 @@ class IntroduceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $introduce = Introduction::findOrFail($id)->delete();
+        if ($introduce) {
+            flash(__('Xóa Giới Thiệu thành công!'))->success();
+            return redirect()->route('projects.index');
+        } else {
+            flash(__('Xóa Giới Thiệu thất bại!'))->error();
+            return redirect()->route('introduces.index');
+        }
     }
 }
