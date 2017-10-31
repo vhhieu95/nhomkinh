@@ -14,6 +14,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin', 'middleware
 	Route::get('/home', 'HomeController@index')->name('admin.index');
 	Route::resource('/users', 'UserController');
     Route::resource('/categories', 'CategoryController');
+    Route::resource('/products', 'ProductController');
+    Route::resource('/image', 'ImageController', ['only' => ['destroy']]);
     Route::resource('news', 'NewsController');
     Route::resource('projects', 'ProjectController');
     Route::resource('introduces', 'IntroduceController');

@@ -16,10 +16,11 @@
           <i class="fa fa-dashboard"></i><span>{{__('Người dùng')}}</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <li class="{{ areActiveRoute(['products.index','products.create', 'products.edit']) }}">
+        <a href="{{ route('products.index')}}">
+        <a href="{{ route('products.index')}}">
           <i class="fa fa-files-o"></i>
-          <span>{{__('Sản Phẩm')}}</span>
+          <span>Sản phẩm</span>
         </a>
       </li>
       <li class="{{isActiveRoute('categories.index')}}">
