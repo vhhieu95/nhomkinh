@@ -22,9 +22,9 @@
           <span>Products</span>
         </a>
       </li>
-      <li>
-        <a href="">
-          <i class="fa fa-th"></i> <span>Categories</span>
+      <li  class="{{ areActiveRoute(['categories.index','categories.create', 'categories.edit']) }}">
+        <a href="{{ route('categories.index')}}">
+          <i class="fa fa-th"></i> <span>Danh mục</span>
         </a>
       </li>
       <li class="treeview">

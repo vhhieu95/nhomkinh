@@ -15,6 +15,10 @@
 <link rel="stylesheet" href="{{asset('bower_components/jvectormap/jquery-jvectormap.css') }}">
 <!-- Date Picker -->
 <link rel="stylesheet" href="{{asset('bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+
+
+<link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.css') }}">
+
 <!-- Daterange picker -->
 <link rel="stylesheet" href="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
 <!-- bootstrap wysihtml5 - text editor -->
@@ -28,11 +32,8 @@
 <script src="{{asset('bower_components/morris.js/morris.min.js') }}"></script>
 <!-- Sparkline -->
 <script src="{{asset('bower_components/jquery-sparkline/dist/jquery.sparkline.min.js') }}"></script>
-<!-- jvectormap -->
-<script src="{{asset('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') }}"></script>
-<script src="{{asset('plugins/jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{asset('bower_components/jquery-knob/dist/jquery.knob.min.js') }}"></script>
+{{-- data table --}}
+<script src="{{asset('bower_components/datatables.net/js/jquery.dataTables.js') }}"></script>
 <!-- daterangepicker -->
 <script src="{{asset('bower_components/moment/min/moment.min.js') }}"></script>
 <script src="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
@@ -50,4 +51,4 @@
 <script src="{{asset('bower_components/AdminLTE/dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('bower_components/AdminLTE/dist/js/demo.js') }}"></script>
-<script src="{{asset('js/main.js') }}"></script>
+<script src="{{asset('backend/main.js') }}"></script>
