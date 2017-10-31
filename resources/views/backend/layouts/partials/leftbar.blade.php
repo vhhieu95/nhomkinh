@@ -18,36 +18,35 @@
       </li>
       <li class="{{ areActiveRoute(['products.index','products.create', 'products.edit']) }}">
         <a href="{{ route('products.index')}}">
-        <a href="{{ route('products.index')}}">
           <i class="fa fa-files-o"></i>
           <span>Sản phẩm</span>
         </a>
       </li>
-      <li class="{{isActiveRoute('categories.index')}}">
+      <li class="{{ areActiveRoute(['categories.index','categories.create', 'categories.edit']) }}">
         <a href="{{ route('categories.index')}}">
           <i class="fa fa-th"></i> <span>{{__('Danh Mục')}}</span>
         </a>
       </li>
-      <li class="">
-        <a href="#">
+      <li class="{{ areActiveRoute(['projects.index','projects.create', 'projects.edit']) }}">
+        <a href="{{ route('projects.index') }}">
           <i class="fa fa-pie-chart"></i>
           <span>{{__('Dự Án')}}</span>
         </a>
       </li>
-      <li class="">
-        <a href="#">
+      <li class="{{ areActiveRoute(['news.index','news.create', 'news.edit']) }}">
+        <a href="{{ route('news.index') }}">
           <i class="fa fa-laptop"></i>
           <span>{{__('Tin Tức')}}</span>
         </a>
       </li>
-      <li class=" {{ isActiveRoute('') }}">
-        <a href="#">
+      <li class="{{ areActiveRoute(['introduces.index','introduces.create', 'introduces.edit']) }}">
+        <a href="{{ route('introduces.index') }}">
           <i class="fa fa-laptop"></i>
           <span>{{__('Giới Thiệu')}}</span>
         </a>
       </li>
-      <li class="{{ isActiveRoute('feedbacks.index') }}">
-        <a href="{{ route('feedbacks.index') }}">
+      <li class="{{ areActiveRoute(['contacts.index','contacts.show']) }}">
+        <a href="{{ route('contacts.index') }}">
           <i class="fa fa-laptop"></i>
           <span>{{__('Liên Hệ')}}</span>
         </a>

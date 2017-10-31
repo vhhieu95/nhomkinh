@@ -38,7 +38,7 @@
                   @endif
                 </div>
                 <div class="form-group {{ $errors->has('image') || $errors->has('image') ? ' has-error' : '' }}"> 
-                  <label for="input-file">{{ __("Images") }}</label>
+                  <label for="input-file">{{ __("Hình ảnh") }}</label>
                   <input type="file" class="form-control" name="image" id="multiple-image" multiple>
                   <small class=" text-danger">{{ $errors->first('image.*') . $errors->first('image') }}</small>
                 </div>
@@ -49,11 +49,9 @@
                     {{__('Trở về')}} 
                   </a>
                   <button type="reset" class="btn btn-warning">
-                    {{__('Reset')}}
+                    {{__('Nhập lại')}}
                   </button>
-                </div>
-                <div class="add-news-submit pull-right">
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary pull-right">
                   {{__('Tạo')}}
                   </button>
                 </div>

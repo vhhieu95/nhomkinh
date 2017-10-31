@@ -46,3 +46,45 @@
 .img-contain {
     position: relative;
 }
+.contain-btn { 
+    float: right !important;
+    margin-right: 1.5%;
+    margin-bottom: 10px;
+}
+.contain-btn.second {
+    margin-right: 0;
+    margin-top: 20px;
+}
+.btn-option:after {
+    content: "";
+    clear:both;
+}
+.btn-option{
+    width: 95px;
+    margin: 0 auto;
+}
+.btn-pencil{
+    font-size: 18px;
+}
+.btn-option .btn-edit {
+    margin-top: 13.5px;
+    margin-left: 21px;
+}
+.form-delete{
+    margin-top: 3px;
+}
+.btn-custom-option {
+    font-size: 22px !important;
+}
+.btn-delete-item {
+    border: none;
+    background: unset;
+    color: #e23434;
+    margin-top:5px; 
+}
+.dataTables_filter {
+    float: left;
+}
+.news-btn {
+    font-size: 16px;
+}

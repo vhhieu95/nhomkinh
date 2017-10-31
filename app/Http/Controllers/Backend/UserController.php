@@ -101,16 +101,18 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        // if(Auth::user()->id == $user->id) {
-        //     flash('Không thể  xóa người dùng đang đăng nhập!')->warning();
-        // }
-
-        $user->delete();
-        if ($user) {
-            flash('Xóa người dùng thành công!')->success();
+        if (Auth::user()->id == $user->id) {
+            flash('Không thể  xóa người dùng đang đăng nhập!')->warning();
         } else {
-            flash('Xóa  người dùng thất bại!')->error();
+            $user->delete();
+            
+            if ($user) {
+                flash('Xóa người dùng thành công!')->success();
+            } else {
+                flash('Xóa  người dùng thất bại!')->error();
+            }
         }
+
         return redirect()->route('users.index');
     }
 }

@@ -11,7 +11,7 @@
         <div class="col-md-12">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title lead">{{__('Enter information')}}</h3>
+              <h3 class="box-title lead">{{__('Nhập thông tin')}}</h3>
             </div>
             <form role="form" method="POST" action="{{ route('introduces.store') }}" enctype="multipart/form-data">
             {{csrf_field()}}
@@ -37,11 +37,9 @@
                     {{__('Trở về')}} 
                   </a>
                   <button type="reset" class="btn btn-warning">
-                    {{__('Reset')}}
+                    {{__('Nhập lại')}}
                   </button>
-                </div>
-                <div class="add-news-submit pull-right">
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary pull-right">
                   {{__('Tạo')}}
                   </button>
                 </div>

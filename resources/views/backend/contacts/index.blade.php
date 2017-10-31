@@ -7,7 +7,7 @@
       </h1>
       <ol class="breadcrumb">
         <li>
-          <a href="#"><i class="fa fa-dashboard"></i>{{__('Home')}}</a>
+          <a href="#"><i class="fa fa-dashboard"></i>{{__('Trang chủ')}}</a>
         </li>
         <li class="active">{{__('Liên Hệ')}}</li>
       </ol>
@@ -31,7 +31,7 @@
                   <th>{{__('Tên')}}</th>
                   <th>{{__('Email')}}</th>
                   <th>{{__('Tiêu đề ')}}</th>
-                  <th class=" col-md-1 text-center">{{__('Option')}}</th>
+                  <th class=" col-md-1 text-center">{{__('Tùy chọn')}}</th>
                 </tr>
                 </thead>
                 <tbody>

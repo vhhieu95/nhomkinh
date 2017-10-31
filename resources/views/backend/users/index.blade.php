@@ -37,7 +37,7 @@
                     <th>{{ __('ID') }}</th>
                     <th>{{ __('Họ Tên') }}</th>
                     <th>{{ __('Email')}}</th>
-                    <th class="text-center">{{ __('Option') }}</th>
+                    <th class="text-center col-md-2">{{ __('Option') }}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -50,22 +50,42 @@
                         </a>
                       </td>
                       <td>{{ $user->email }}</td>
-                      <td align="center">
-                        <div class="text-center">
-                          <a href="{{ route('users.show', $user->id) }}"  class="fa fa fa-search pull-left" data-original-title="Xem" data-toggle="tooltip">
+                      {{-- <td>
+                        <div class="btn-option text-center">
+                          <a href="{{ route('users.show', $user->id) }}"  class="btn fa fa-search-plus pull-left news-btn btn-custom-option"  data-original-title="Xem" data-toggle="tooltip">
                           </a>
-                          <a href="{{ route('users.edit', $user->id) }}"  class="btn-edit fa fa-pencil-square-o" data-original-title="Sửa" data-toggle="tooltip">
+                          <a href="{{ route('users.edit', $user->id) }}"  class="btn fa fa-pencil-square-o news-btn  pull-left btn-custom-option " data-original-title="Sửa" data-toggle="tooltip">
                           </a>
                           <form method="POST" action="{{ route('users.destroy', $user->id) }}" class="inline">
                             {!! csrf_field() !!}
                             {{ method_field('DELETE') }}
-                            <button type="submit" 
-                              class="pull-right btn btn-delete-item fa fa-trash-o"
+                            <button type="submit" class="btn-custom-option news-btn fa fa-trash-o btn-delete-item pull-right"  
+                              data-original-title="{{ __('Delete') }}" data-toggle="tooltip"
                               data-title="{{ __('Confirm deletion!') }}"
-                              data-confirm="{{ __('Are you sure you want to delete?') }}"
-                              data-original-title="Xóa" data-toggle="tooltip">
+                              data-confirm="{{ __('Are you sure you want to delete?') }}">
                             </button>
                           </form> 
+                        </div>
+                      </td> --}}
+                      <td align="center">
+                        <div class="text-center">
+                          <a href="{{ route('users.show', $user->id) }}"
+                            data-original-title="{{ __('Detail') }}" data-toggle="tooltip"
+                            class="btn fa fa-search-plus pull-left news-btn btn-custom-option">
+                          </a>
+                          <a href="{{ route('users.edit', $user->id) }}"
+                            class="btn fa fa-pencil-square-o news-btn center-block btn-custom-option" 
+                            data-original-title="{{ __('Edit') }}" data-toggle="tooltip" >
+                          </a>
+                          <form action="{{ route('users.destroy', $user->id) }}" method="POST" class="inline">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                            <button type="submit" class="btn-custom-option news-btn fa fa-trash-o btn-delete-item pull-right"  
+                              data-original-title="{{ __('Delete') }}" data-toggle="tooltip"
+                              data-title="{{ __('Confirm deletion!') }}"
+                              data-confirm="{{ __('Are you sure you want to delete?') }}">
+                            </button>
+                          </form>
                         </div>
                       </td>
                     </tr>

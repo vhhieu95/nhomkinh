@@ -18,8 +18,6 @@
 
 
 <link rel="stylesheet" href="{{asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.css') }}">
-<link rel="stylesheet" href="{{asset('css/style.css') }}">
-
 <!-- Daterange picker -->
 <link rel="stylesheet" href="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
 <!-- bootstrap wysihtml5 - text editor -->

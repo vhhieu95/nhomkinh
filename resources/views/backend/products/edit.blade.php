@@ -86,11 +86,12 @@
                   <button type="reset" class="btn btn-warning">
                     {{__('Xóa')}}
                   </button> 
+                  <button type="submit" class="pull-right btn btn-primary">
+                    {{__('Xác nhận')}}</button>
                 </div>
-                <div class="edit-news-submit">
-                  <button type="submit" class="btn btn-primary">
-                    {{__('Xác nhận')}} 
-                  </button>
+                 
+                  
+                
                 </div>
               </div>
             </form>
