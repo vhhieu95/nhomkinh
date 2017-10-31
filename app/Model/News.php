@@ -23,7 +23,7 @@ class News extends Model
      * @var array $fillable
      */
     protected $fillable = [
-        'title', 'content', 'category_id'
+        'title', 'description', 'content', 'image'
     ];
 
     /**
@@ -38,5 +38,21 @@ class News extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    /**
+     * Get Image Attribute
+     *
+     * @param string $image get attribute image
+     *
+     * @return string
+     */
+    public function getImageAttribute($image)
+    {
+        if ($image) {
+            return asset(config('constant.path_upload_news') . $image);
+        } else {
+            return asset(config('constant.default_image'));
+        }
     }
 }

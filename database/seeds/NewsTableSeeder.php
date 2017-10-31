@@ -13,7 +13,7 @@ class NewsTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        factory(App\Model\News::class, 1)->create();
+        factory(App\Model\News::class, 100)->create();
         Model::reguard();
     }
 }
