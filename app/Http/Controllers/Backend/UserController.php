@@ -107,9 +107,9 @@ class UserController extends Controller
 
         $user->delete();
         if ($user) {
-            flash('Xóa người dùng thành công!');
+            flash('Xóa người dùng thành công!')->success();
         } else {
-            flash('Xóa  người dùng thất bại!');
+            flash('Xóa  người dùng thất bại!')->error();
         }
         return redirect()->route('users.index');
     }
