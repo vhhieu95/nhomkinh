@@ -15,8 +15,10 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('title');
             $table->text('description');
+            $table->text('content');
+            $table->string('image')->nullable();
             $table->string('slug')->unique();
             $table->softDeletes();
             

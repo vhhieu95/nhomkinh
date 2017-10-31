@@ -1,15 +1,15 @@
 @extends('backend.layouts.main')
-@section('title','Quản lý tin tức')
+@section('title','Quản lý liên hệ')
 @section('content')
   <div class="content-wrapper">
     <section class="content-header">
-      <h1>{{__('Quản lý tin tức')}}
+      <h1>{{__('Quản lý liên hệ ')}}
       </h1>
       <ol class="breadcrumb">
         <li>
           <a href="#"><i class="fa fa-dashboard"></i>{{__('Home')}}</a>
         </li>
-        <li class="active">{{__('Tin tức')}}</li>
+        <li class="active">{{__('Liên Hệ')}}</li>
       </ol>
     </section>
     <section class="content">
@@ -18,13 +18,7 @@
           <div class="box">
             <div class="box-header">
               <div class="title-news mb-10">
-                <h3 class="box-title title-header">{{__('Danh sách tin tức ')}}</h3>
-              </div>
-              <div >
-                <a href="{{ route('news.create') }}" class="btn btn-primary pull-right">
-                  <i class="fa fa-plus-circle"></i>
-                  {{__('Tạo Tin Tức')}}
-                </a>
+                <h3 class="box-title title-header">{{__('Danh sách liên hệ ')}}</h3>
               </div>
             </div>
             <div class="box-body">
@@ -34,22 +28,24 @@
                 <thead>
                 <tr>
                   <th>{{__('Id')}}</th>
-                  <th>{{__('Tiêu đề')}}</th>
-                  <th>{{__('Mô tả')}}</th>
+                  <th>{{__('Tên')}}</th>
+                  <th>{{__('Email')}}</th>
+                  <th>{{__('Tiêu đề ')}}</th>
                   <th class=" col-md-1 text-center">{{__('Option')}}</th>
                 </tr>
                 </thead>
                 <tbody>
-                  @foreach($news as $item)
+                  @foreach($contacts as $item)
                   <tr>
-                    <td>{{$item->id}}</td>
-                    <td>{{$item->title}}</td>
-                    <td>{{$item->description}}</td>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->name }}</td>
+                    <td>{{ $item->email }}</td>
+                    <td>{{ $item->subject }}</td>
                     <td class="text-center col-md-2">
                       <div class="btn-option text-center">
-                        <a href="{{ route('news.edit',$item->id) }}" class="btn fa fa-pencil-square-o news-btn pull-left btn-custom-option" data-original-title="Edit" data-toggle="tooltip">
+                        <a href="{{ route('contacts.show',$item->id) }}" class="btn fa fa-search news-btn pull-left btn-custom-option" data-original-title="Chi Tiết" data-toggle="tooltip">
                         </a>
-                        <form action="{{ route('news.destroy',$item->id) }}" 
+                        <form action="{{ route('contacts.destroy',$item->id) }}" 
                           method="POST" class="inline">
                           {{csrf_field()}}
                           {{method_field('DELETE')}}
@@ -69,13 +65,7 @@
               <div class="cls-searchnews-not-found text-center" hidden="">
                 {{__('Không có dữ liệu')}}
               </div>
-              <div class="contain-btn second pull-right">
-                <a href="{{ route('news.create') }}" class="btn btn-primary">
-                  <span class="fa fa-plus-circle" aria-hidden="true"></span>
-                  {{__('Tạo Tin Tức')}}
-                </a> 
-              </div>
-              {{ $news->render() }}
+              {{ $contacts->render() }}
             </div>
           </div>
         </div>

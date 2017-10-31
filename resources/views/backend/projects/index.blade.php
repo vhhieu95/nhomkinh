@@ -1,15 +1,15 @@
 @extends('backend.layouts.main')
-@section('title','Quản lý tin tức')
+@section('title','Quản lý dự án')
 @section('content')
   <div class="content-wrapper">
     <section class="content-header">
-      <h1>{{__('Quản lý tin tức')}}
+      <h1>{{__('Quản lý dự án ')}}
       </h1>
       <ol class="breadcrumb">
         <li>
           <a href="#"><i class="fa fa-dashboard"></i>{{__('Home')}}</a>
         </li>
-        <li class="active">{{__('Tin tức')}}</li>
+        <li class="active">{{__('Dự án')}}</li>
       </ol>
     </section>
     <section class="content">
@@ -18,12 +18,12 @@
           <div class="box">
             <div class="box-header">
               <div class="title-news mb-10">
-                <h3 class="box-title title-header">{{__('Danh sách tin tức ')}}</h3>
+                <h3 class="box-title title-header">{{__('Danh sách Dự án ')}}</h3>
               </div>
               <div >
-                <a href="{{ route('news.create') }}" class="btn btn-primary pull-right">
+                <a href="{{ route('projects.create') }}" class="btn btn-primary pull-right">
                   <i class="fa fa-plus-circle"></i>
-                  {{__('Tạo Tin Tức')}}
+                  {{__('Tạo Dự án')}}
                 </a>
               </div>
             </div>
@@ -40,16 +40,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                  @foreach($news as $item)
+                  @foreach($projects as $item)
                   <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->title}}</td>
                     <td>{{$item->description}}</td>
                     <td class="text-center col-md-2">
                       <div class="btn-option text-center">
-                        <a href="{{ route('news.edit',$item->id) }}" class="btn fa fa-pencil-square-o news-btn pull-left btn-custom-option" data-original-title="Edit" data-toggle="tooltip">
+                        <a href="{{ route('projects.edit',$item->id) }}" class="btn fa fa-pencil-square-o news-btn pull-left btn-custom-option" data-original-title="Edit" data-toggle="tooltip">
                         </a>
-                        <form action="{{ route('news.destroy',$item->id) }}" 
+                        <form action="{{ route('projects.destroy',$item->id) }}" 
                           method="POST" class="inline">
                           {{csrf_field()}}
                           {{method_field('DELETE')}}
@@ -70,12 +70,12 @@
                 {{__('Không có dữ liệu')}}
               </div>
               <div class="contain-btn second pull-right">
-                <a href="{{ route('news.create') }}" class="btn btn-primary">
+                <a href="{{ route('projects.create') }}" class="btn btn-primary">
                   <span class="fa fa-plus-circle" aria-hidden="true"></span>
-                  {{__('Tạo Tin Tức')}}
+                  {{__('Tạo Dự án')}}
                 </a> 
               </div>
-              {{ $news->render() }}
+              {{ $projects->render() }}
             </div>
           </div>
         </div>

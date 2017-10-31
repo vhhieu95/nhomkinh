@@ -15,6 +15,11 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin', 'middleware
 	Route::resource('/users', 'UserController');
     Route::resource('/categories', 'CategoryController');
     Route::resource('news', 'NewsController');
+    Route::resource('projects', 'ProjectController');
+    Route::resource('introduces', 'IntroduceController');
+    Route::resource('contacts', 'ContactController', ['only' => [
+        'index', 'show', 'destroy'
+    ]]);
 });
 
 Auth::routes();
