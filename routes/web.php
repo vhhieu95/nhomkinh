@@ -10,8 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() {
-	Route::get('/home', 'HomeController@index')->name('admin.index');
-    Route::resource('/categories', 'CategoryController');
-});
 
+Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin'],function() {
+    Route::get('/home', 'HomeController@index')->name('admin.index');
+    Route::resource('/categories', 'CategoryController');
+    Route::resource('news', 'NewsController');
+});
