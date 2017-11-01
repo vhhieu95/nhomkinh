@@ -24,4 +24,9 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin', 'middleware
     ]]);
 });
 
+Route::group(['namespace' => 'Frontend'], function () {
+    Route::get('san-pham', 'ProductController@index');
+    Route::get('san-pham/{slug}', 'ProductController@show')->name('san-pham.show');
+});
+
 Auth::routes();
