@@ -39,14 +39,17 @@ if (!function_exists('areActiveRoute')) {
  * Start string truncating
  */
 const START_POSITION = 0;
+
 /**
  * Length limit of content will be display
  */
 const LIMIT_LENGTH = 100;
+
 /**
  * Format utf-8 for truncating content unicode
  */
 const UNICODE_FORMAT = 'utf-8';
+
 /**
  * Suffix ..., after truncating content
  */

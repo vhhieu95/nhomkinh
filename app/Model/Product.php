@@ -28,7 +28,7 @@ class Product extends Model
     ];
 
     const ROW_LIMIT = 10;
-    
+    const PRODUCT_LIMIT = 3;
     /**
      * Return the sluggable configuration array for this model.
      *
