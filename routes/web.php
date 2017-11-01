@@ -25,3 +25,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin', 'middleware
 });
 
 Auth::routes();
+Route::group(['namespace' => 'Frontend'], function() {
+    Route::get('/', 'HomeController@index')->name('home');
+});
