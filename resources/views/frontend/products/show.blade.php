@@ -80,19 +80,19 @@
                 <!-- Agent Info -->
                 <div class="row">
                     <div class="agen_info">
-                        <div class="col-md-4">
+                        <div class="col-md-4 ">
                             <a href="{{ route('san-pham.show', $productDiff->slug) }}">
                             @if (isset($productDiff->images[0]))
-                                <img class="img-responsive img-hover" src="{{ asset($productDiff->images[0]->path) }}" alt="{{ $productDiff->name }}">
+                                <img class="img-responsive cls-img-product" src="{{ asset($productDiff->images[0]->path) }}" alt="{{ $productDiff->name }}">
                             @else  
-                                <img class="img-responsive img-hover" src="{{ asset(config('constant.default_image')) }}" alt="{{ $productDiff->name }}"> 
+                                <img class="img-responsive cls-img-product" src="{{ asset(config('constant.default_image')) }}" alt="{{ $productDiff->name }}"> 
                             @endif
                             </a>
                         </div>
                         <div class="col-md-8">
                             <div class="panel panel-default">
 
-                                <div class="panel-body">
+                                <div class="panel-body cls-img-product">
                                     <div class="row agen_desc">
                                         <div class="col-sm-8">
                                             <h3 class="sec_titl">

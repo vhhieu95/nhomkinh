@@ -8,10 +8,10 @@
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-image">
-                        @if (isset($value->image))
+                        @if (isset($news->image))
                             <img class="img-responsive img-hover" src="{{ $news->image }}" alt="{{ $news->title }}">
                         @else
-                            <img class="img-responsive img-hover" src="{{ asset(config('constant.default_image')) }}" alt="{{ $value->title }}">
+                            <img class="img-responsive img-hover" src="{{ asset(config('constant.default_image')) }}" alt="{{ $news->title }}">
                         @endif
                     </div>
 

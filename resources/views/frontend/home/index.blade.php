@@ -93,7 +93,7 @@
               <li>
                 <img src="{{asset($key->path)}}" alt="Slider image" />
                 <div class="slide-info">
-                  <p class="sli_price"><a href="">{{('Chi tiết')}}</a></p>
+                  <p class="sli_price"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{('Chi tiết')}}</a></p>
                   <p class="sli_titl">{{$newsproduct->name}} </p>
                   <p class="sli_desc"> {{contentLimit($newsproduct->description, 100)}}</p>
                 </div>
@@ -114,7 +114,7 @@
             <h3 class="main_titl text-left">{{ ('Sản phẩm mới') }}</h3>
           </div>
           <div class="col-xs-6">
-            <h3 class="link_titl text-right"><a href="property_listing.html">{{ ('Xem tất cả') }} </a></h3>
+            <h3 class="link_titl text-right"><a href="{{route('san-pham.index')}}">{{ ('Xem tất cả') }} </a></h3>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -129,7 +129,7 @@
               @endif
              
               <div class="img_hov_eff">
-                <a class="btn btn-default btn_trans" href="property_details.html">{{ ('Chi tiết') }}</a>
+                <a class="btn btn-default btn_trans" href="{{route('san-pham.show', $product->slug)}}">{{ ('Chi tiết') }}</a>
               </div>
             </div>
             <div class="panel-body">
@@ -142,7 +142,7 @@
                   <p class="price text-left">{{ ('Liên hệ') }}</p>
                 </div>
                 <div class="col-md-6">
-                  <p class="readmore text-right"> <a href="property_details.html">{{ ('Chi tiết') }}</a> </p>
+                  <p class="readmore text-right"> <a href="{{route('san-pham.show', $product->slug)}}">{{ ('Chi tiết') }}</a> </p>
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@
             <h3 class="main_titl text-left">{{  ('Dự án') }}</h3>
           </div>
           <div class="col-xs-6">
-            <h3 class="link_titl text-right"><a href=""> {{ ('Xem tất cả') }}</a></h3>
+            <h3 class="link_titl text-right"><a href="{{route('du-an.index')}}"> {{ ('Xem tất cả') }}</a></h3>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -187,7 +187,7 @@
             </div>
             <div class="panel-body">
               <h3 class="sec_titl text-center">
-                <a href="">{{ $project->title }}</a>
+                <a href="{{route('du-an.show', $project->slug)}}">{{ $project->title }}</a>
               </h3>  
               <p class="sec_desc text-center">{{ contentLimit($project->description, 50) }}</p>
               <div class="panel_hidd">

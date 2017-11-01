@@ -31,4 +31,5 @@ Route::group(['namespace' => 'Frontend'], function() {
     Route::get('san-pham/{slug}', 'ProductController@show')->name('san-pham.show');
     Route::get('tin-tuc', 'NewsController@index')->name('tin-tuc.index');
     Route::get('tin-tuc/{slug}', 'NewsController@show')->name('tin-tuc.show');
+    Route::resource('du-an', 'ProjectController')->only(['index', 'show']);
 });
