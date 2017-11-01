@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="srch_frm">
+          <div class="srch_frm height">
             <h3>Real Estate Search</h3>
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="control-group form-group">
