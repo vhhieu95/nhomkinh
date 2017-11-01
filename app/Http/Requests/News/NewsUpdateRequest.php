@@ -26,7 +26,7 @@ class NewsUpdateRequest extends FormRequest
         return [
             'title' => 'required|max:100',
             'description' => 'required|max:1000',
-            'content' => 'required|max:2000',
+            'content' => 'required|max:5000',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:10000',
         ];
     }
