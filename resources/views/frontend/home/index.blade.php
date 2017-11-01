@@ -183,9 +183,9 @@
         <div class="col-md-3">
           <div class="panel panel-default">
             <div class="panel-image">
-              <img class="img-responsive img-hover" src="{{$project->image}}" alt="">
+              <img class="img-responsive cls-img-project" src="{{$project->image}}" alt="">
             </div>
-            <div class="panel-body">
+            <div class="panel-body cls-height">
               <h3 class="sec_titl text-center">
                 <a href="{{route('du-an.show', $project->slug)}}">{{ $project->title }}</a>
               </h3>  
