@@ -3382,3 +3382,7 @@ section#wrng_pg .btns a.orn_btn {
         float: left;
     }
 }
+.cls-img {
+    height: 300px;
+    width: 100%;
+}

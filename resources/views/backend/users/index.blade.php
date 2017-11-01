@@ -50,23 +50,6 @@
                         </a>
                       </td>
                       <td>{{ $user->email }}</td>
-                      {{-- <td>
-                        <div class="btn-option text-center">
-                          <a href="{{ route('users.show', $user->id) }}"  class="btn fa fa-search-plus pull-left news-btn btn-custom-option"  data-original-title="Xem" data-toggle="tooltip">
-                          </a>
-                          <a href="{{ route('users.edit', $user->id) }}"  class="btn fa fa-pencil-square-o news-btn  pull-left btn-custom-option " data-original-title="Sửa" data-toggle="tooltip">
-                          </a>
-                          <form method="POST" action="{{ route('users.destroy', $user->id) }}" class="inline">
-                            {!! csrf_field() !!}
-                            {{ method_field('DELETE') }}
-                            <button type="submit" class="btn-custom-option news-btn fa fa-trash-o btn-delete-item pull-right"  
-                              data-original-title="{{ __('Delete') }}" data-toggle="tooltip"
-                              data-title="{{ __('Confirm deletion!') }}"
-                              data-confirm="{{ __('Are you sure you want to delete?') }}">
-                            </button>
-                          </form> 
-                        </div>
-                      </td> --}}
                       <td align="center">
                         <div class="text-center">
                           <a href="{{ route('users.show', $user->id) }}"
