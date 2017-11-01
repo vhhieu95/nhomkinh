@@ -11,11 +11,11 @@
                         @foreach($products as $product)
                         <div class="col-md-4 item">
                             <div class="panel panel-default">
-                                <div class="panel-image cls-img">
+                                <div class="panel-image ">
                                     @if (isset($product->images[0]))
-                                    <img class="img-responsive img-hover" src="{{ asset($product->images[0]->path) }}" alt="{{ $product->name }}">
+                                    <img class="img-responsive cls-img" src="{{ asset($product->images[0]->path) }}" alt="{{ $product->name }}">
                                     @else 
-                                    <img class="img-responsive img-hover" src="{{ asset(config('constant.default_image')) }}" alt="{{ $product->name }}">
+                                    <img class="img-responsive cls-img" src="{{ asset(config('constant.default_image')) }}" alt="{{ $product->name }}">
                                     @endif
 
                                     <div class="img_hov_eff">
