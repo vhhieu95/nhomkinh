@@ -27,4 +27,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'nhomkinhadmin', 'middleware
 Auth::routes();
 Route::group(['namespace' => 'Frontend'], function() {
     Route::get('/', 'HomeController@index')->name('home');
+     Route::get('san-pham', 'ProductController@index');
+    Route::get('san-pham/{slug}', 'ProductController@show')->name('san-pham.show');
 });

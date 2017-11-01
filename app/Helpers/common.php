@@ -35,7 +35,6 @@ if (!function_exists('areActiveRoute')) {
         }
     }
 }
-
 /**
  * Start string truncating
  */
@@ -55,9 +54,7 @@ const UNICODE_FORMAT = 'utf-8';
  * Suffix ..., after truncating content
  */
 const SUFFIX = '...';
-
 if (!function_exists('contentLimit')) {
-
     /**
      * Limit length of content
      *
