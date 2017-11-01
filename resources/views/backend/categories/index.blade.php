@@ -51,14 +51,14 @@
                       <td>{{ $category->name }}</td>
                       <td align="center">
                         <div class="btn-option text-center">
-                          <a href="{{ route('categories.edit',$category->id) }}" 
-                            class= "btn-edit fa fa-pencil-square-o btn-custom-option pull-left"></a>
+                          <a href="{{ route('categories.edit',$category->id) }}"
+                            class= "btn-edit fa fa-pencil-square-o btn-custom-option pull-left" data-original-title="{{ __('Sửa') }}" data-toggle="tooltip"></a>
                           <form method="POST" action="{{ route('categories.destroy', $category->id) }}"
                             class="form-del inline" >
                             {{ method_field('DELETE') }}
                             <input type="hidden" name="_token"  value="{!! csrf_token()!!}">
                             <button type="submit" 
-                              class="btn-custom-option btn btn-delete-item fa fa-trash-o"
+                              class="btn-custom-option btn btn-delete-item fa fa-trash-o" data-original-title="{{ __('Xóa') }}" data-toggle="tooltip"
                               data-title="{{ __('Xác nhận xóa !') }}"
                               data-confirm="{{ __('Bạn chắc chắn muốn xóa ?') }}">
                             </button>

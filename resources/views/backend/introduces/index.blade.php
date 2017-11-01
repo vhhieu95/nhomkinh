@@ -45,7 +45,7 @@
                     <td>{{$item->title}}</td>
                     <td class="text-center col-md-2">
                       <div class="btn-option text-center">
-                        <a href="{{ route('introduces.edit',$item->id) }}" class="btn fa fa-pencil-square-o news-btn pull-left btn-custom-option" data-original-title="Edit" data-toggle="tooltip">
+                        <a href="{{ route('introduces.edit',$item->id) }}" class="btn fa fa-pencil-square-o news-btn pull-left btn-custom-option" data-original-title="Sửa" data-toggle="tooltip">
                         </a>
                         <form action="{{ route('introduces.destroy',$item->id) }}" 
                           method="POST" class="inline">
@@ -53,7 +53,7 @@
                           {{method_field('DELETE')}}
                           <button type="submit" class="news-btn fa fa-trash-o 
                             btn-delete-item pull-left btn-custom-option"  
-                            data-original-title="Delete" data-toggle="tooltip"
+                            data-original-title="Xóa" data-toggle="tooltip"
                             data-title="{{ __('Xác nhận xóa!') }}"
                             data-confirm="{{ __('Bạn có chắc chắn xóa?') }}">
                           </button>

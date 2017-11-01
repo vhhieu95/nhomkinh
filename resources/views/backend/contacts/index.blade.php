@@ -43,7 +43,7 @@
                     <td>{{ $item->subject }}</td>
                     <td class="text-center col-md-2">
                       <div class="btn-option text-center">
-                        <a href="{{ route('contacts.show',$item->id) }}" class="btn fa fa-search news-btn pull-left btn-custom-option" data-original-title="Chi Tiết" data-toggle="tooltip">
+                        <a href="{{ route('contacts.show',$item->id) }}" class="btn fa fa-search news-btn pull-left btn-custom-option" data-original-title="Xem" data-toggle="tooltip">
                         </a>
                         <form action="{{ route('contacts.destroy',$item->id) }}" 
                           method="POST" class="inline">
@@ -51,7 +51,7 @@
                           {{method_field('DELETE')}}
                           <button type="submit" class="news-btn fa fa-trash-o 
                             btn-delete-item pull-left btn-custom-option"  
-                            data-original-title="Delete" data-toggle="tooltip"
+                            data-original-title="Xóa" data-toggle="tooltip"
                             data-title="{{ __('Xác nhận xóa!') }}"
                             data-confirm="{{ __('Bạn có chắc chắn xóa?') }}">
                           </button>
