@@ -52,3 +52,13 @@
 <script src="{{asset('bower_components/AdminLTE/dist/js/demo.js') }}"></script>
 <script src="{{asset('backend/main.js') }}"></script>
 <script src="{{ asset('bower_components/ckeditor/ckeditor.js') }}"></script>
+<script> 
+CKEDITOR.replace( 'ckeditor', {
+        filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+        filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+        filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+        filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+        filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+        filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+    } );
+</script>
