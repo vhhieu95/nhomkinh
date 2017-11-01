@@ -16,7 +16,7 @@
               {{csrf_field()}}
               {{method_field('PUT')}}
               <div class="box-body">
-                <div class="form-group" {{ $errors->has('title') ? ' has-error' : '' }}>
+                <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">
                   <label>{{__('Tiêu đề ')}}</label>
                   <input type="text" class="form-control" name="title"
                   value="{{$project->title}}">
@@ -24,14 +24,14 @@
                       <span class="help-block">{{$errors->first('title')}}</span>
                   @endif
                 </div>
-                <div class="form-group" {{ $errors->has('description') ? ' has-error' : '' }}>
+                <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
                   <label>{{__('Mô tả')}}</label>
                   <textarea class="form-control" name="description">{{$project->description}}</textarea>
                   @if($errors->first('description'))
                       <span class="help-block">{{$errors->first('description')}}</span>
                   @endif
                 </div>
-                <div class="form-group" {{ $errors->has('content') ? ' has-error' : '' }}>
+                <div class="form-group {{ $errors->has('content') ? ' has-error' : '' }}">
                   <label>{{__('Nội dung ')}}</label>
                   <textarea class="form-control" id="ckeditor" name="content">{{$project->content}}</textarea>
                   @if($errors->first('content'))

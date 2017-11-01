@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Product\ProductCreateRequest;
+use App\Http\Requests\Product\ProductUpdateRequest;
 use App\Model\Category;
 use App\Model\Image;
 use App\Model\Product;
@@ -46,7 +48,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductCreateRequest $request)
     {
         $product = new Product($request->all());
         $result = $product->save();
@@ -91,7 +93,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(ProductUpdateRequest $request, Product $product)
     {
         if ($product->update($request->all())) {
             flash(__('Sửa thành công!'))->success();

@@ -25,7 +25,7 @@ class IntroduceUpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|max:100',
-            'content' => 'required|max:2000',
+            'content' => 'required|max:5000',
         ];
     }
 }

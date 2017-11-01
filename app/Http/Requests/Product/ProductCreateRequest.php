@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Introduces;
+namespace App\Http\Requests\Product;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class IntroduceCreateRequest extends FormRequest
+class ProductCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class IntroduceCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100',
-            'content' => 'required|max:5000',
+            'name' => 'required|max:300|unique:products',
+            'description' => 'required|max:5000',
         ];
     }
 }
