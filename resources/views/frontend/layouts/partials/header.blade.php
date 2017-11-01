@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="" href="#">Trang chủ</a>
+                        <a href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li>
                         <a href="#"> Sản phẩm</a>
@@ -30,15 +30,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Dự án</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="agents.html">Our Agents </a>
-                            </li>
-                            <li>
-                                <a href="agents_single.html"> Agent Single </a>
-                            </li>
-                        </ul>
+                        <a href="{{route('du-an.index')}}">Dự án</a>
                     </li>
                     <li>
                         <a href="features.html">Tin Tức</a>

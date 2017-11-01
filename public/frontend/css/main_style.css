@@ -3398,3 +3398,10 @@ section#wrng_pg .btns a.orn_btn {
     height: 300px;
     width: 100%;
 }
+.cls-img-project {
+    height: 200px;
+    width: 100%;
+}
+.cls-img-product {
+    height: 250px;
+}
