@@ -29,7 +29,7 @@
                 <div class="form-group has-feedback
                   {{ $errors->has('description') ? ' has-error' : '' }}">
                   <label for="description">{{ __('Mô tả') }}</label>
-                  <textarea class="form-control ckeditor" name= "description" 
+                  <textarea class="form-control" id="ckeditor" name= "description" 
                     id="description" placeholder="{{ __('Enter description') }}"
                     value="{{ old('description') }}" ></textarea> 
                   <small class="text-danger">{{ $errors->first('description') }}</small>

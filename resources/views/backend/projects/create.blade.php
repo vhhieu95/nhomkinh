@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group" {{ $errors->has('content') ? ' has-error' : '' }}>
                   <label>{{__('Nội dung')}}</label>
-                  <textarea class="ckeditor form-control" name="content"></textarea>
+                  <textarea class="form-control" id="ckeditor" name="content"></textarea>
                   @if($errors->first('content'))
                     <span class="help-block">{{$errors->first('content')}}</span>
                   @endif
