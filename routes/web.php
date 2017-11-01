@@ -32,4 +32,6 @@ Route::group(['namespace' => 'Frontend'], function() {
     Route::get('tin-tuc', 'NewsController@index')->name('tin-tuc.index');
     Route::get('tin-tuc/{slug}', 'NewsController@show')->name('tin-tuc.show');
     Route::resource('du-an', 'ProjectController')->only(['index', 'show']);
+    Route::get('lien-he', 'ContactController@create')->name('lien-he.create');
+    Route::post('lien-he', 'ContactController@store')->name('lien-he.store');
 });

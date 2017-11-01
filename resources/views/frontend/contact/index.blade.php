@@ -9,59 +9,57 @@
             <div class="row">
                 <div class="titl_sec">
                     <div class="col-lg-12">
-
-                        <h3 class="main_titl text-left">
-                Send us email
-            </h3>
-
+                        <h3 class="main_titl text-left">{{('Gửi mail cho chúng tôi')}}</h3>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-md-12">
+                    @include('flash::message')
                     <div class="cont_frm">
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" method="POST" action="{{route('lien-he.store')}}">
+                            {{csrf_field()}}
                             <div class="control-group form-group col-md-6 first">
-                                <div class="controls">
-                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." placeholder="Your Name">
+                                <div class="controls {{ $errors->has('name') ? ' has-error' : '' }}">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Tên bạn" value="{{old('name')}}">
                                     <div class="in_ico">
                                         <i class="fa fa-user"></i>
                                     </div>
-                                    <p class="help-block"></p>
+                                    <small class="text-danger">{{ $errors->first('email') }}</small>
                                 </div>
-
-                                <div class="controls">
-                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter an email address." placeholder="Email Address">
+                                <div class="controls {{ $errors->has('email') ? ' has-error' : '' }}">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email của bạn">
                                     <div class="in_ico">
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
-                                    <p class="help-block"></p>
+                                    <small class="text-danger">{{ $errors->first('email') }}</small>
                                 </div>
 
-                                <div class="controls">
-                                    <input type="number" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number." placeholder="Your Phone">
+                                <div class="controls {{ $errors->has('phone') ? ' has-error' : '' }}">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Số điện thoại của bạn">
                                     <div class="in_ico">
                                         <i class="fa fa-phone"></i>
                                     </div>
-                                    <p class="help-block"></p>
+                                    <small class="text-danger">{{ $errors->first('phone') }}</small>
                                 </div>
 
-                                <div class="controls last">
-                                    <input type="text" class="form-control" id="web" required data-validation-required-message="Please enter your website." placeholder="Website">
+                                <div class="controls last {{ $errors->has('subject') ? ' has-error' : '' }}">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Chủ đề">
                                     <div class="in_ico">
                                         <i class="fa fa-pencil"></i>
                                     </div>
-                                    <p class="help-block"></p>
+                                    <small class="text-danger">{{ $errors->first('subject') }}</small>
                                 </div>
 
                                 <div class="clearfix"></div>
                             </div>
 
                             <div class="control-group form-group col-md-6">
-                                <div class="controls">
-                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" placeholder="Message"></textarea>
+                                <div class="controls {{ $errors->has('content') ? ' has-error' : '' }}">
+                                    <textarea rows="10" cols="100" class="form-control" id="content"  maxlength="999" style="resize:none" placeholder="Nội dung" name="content"></textarea>
                                     <div class="in_ico">
                                         <i class="fa fa-paper-plane-o"></i>
                                     </div>
+                                    <small class="text-danger">{{ $errors->first('email') }}</small>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send Message</button>
                             </div>
@@ -81,7 +79,7 @@
                     <div class="col-lg-12">
 
                         <h3 class="main_titl text-left">
-                Our Location
+                {{('Vị trí của chúng tôi')}}
             </h3>
 
                     </div>
