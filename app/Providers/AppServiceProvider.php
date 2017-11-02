@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
             'product' => \App\Model\Product::class,
             
         ]);
+        
         Schema::defaultStringLength(191);
     }
 
