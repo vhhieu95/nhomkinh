@@ -5,42 +5,42 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-               <div class="panel panel-default">
-                  <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b> Sản Phẩm Mới </b></div>
-                  <div class="panel-body">
-                     <div class="row">
-                        <div class="col-xs-12">
-                           <ul class="demo1">
-                              @foreach($products as $product)
-                              <li class="news-item">
-                                 <table cellpadding="4">
-                                    <tr>
-                                       <td>
-                                        {{-- <img src="images/1.png" width="60" class="img-circle" /> --}}
-                                        @if(isset($product->images[0]))
-                                          <img class="img-circle" width="80px" src="{{asset($product->images[0]->path)}}">
-                                        @else
-                                           <img class="img-circle" width="80" src="{{asset(config('constant.default_image' ))}}">
-                                        @endif
-                                      </td>
-                                       <td>
-                                         <p><a href="{{route('san-pham.show', $newsproduct->slug)}}">
-                                              {{ $product->name }}
-                                            </a></p>
-                                       
-                                         <p>{{contentLimit($newsproduct->description, 40)}}</p>
-                                       </td>
-                                    </tr>
-                                 </table>
-                              </li>
-                            @endforeach
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="panel-footer"> </div>
-               </div>
-            </div>
+           <div class="panel panel-default">
+              <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b> Sản Phẩm Mới </b></div>
+              <div class="panel-body">
+                 <div class="row">
+                    <div class="col-xs-12">
+                       <ul class="demo1">
+                          @foreach($products as $product)
+                          <li class="news-item">
+                             <table cellpadding="4">
+                                <tr>
+                                   <td style="padding-right: 10px">
+                                    @if(isset($product->images[0]))
+                                      <img class="img-circle" width="80px" src="{{asset($product->images[0]->path)}}">
+                                    @else
+                                       <img class="img-circle" width="80" src="{{asset(config('constant.default_image' ))}}">
+                                    @endif
+                                  </td>
+                                   <td>
+                                     <p><a href="{{route('san-pham.show', $newsproduct->slug)}}">
+                                          {{ $product->name }}
+                                        </a></p>
+                                   
+                                     <p>{{contentLimit($newsproduct->description, 50)}}</p>
+                                   </td>
+                                </tr>
+                             </table>
+                          </li>
+                        @endforeach
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel-footer"> </div>
+           </div>
+        
+        </div>
         <div class="col-md-8 slide_sec">
           <div id="slider" class="silde_img flexslider">
             <ul class="slides">

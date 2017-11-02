@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Cửa hàng nhôm kính HouseDoor</title>
+	<title>@yield('title')</title>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet">

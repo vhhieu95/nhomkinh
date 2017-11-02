@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title', __('$news->title'))
+@section('title', __(':title', ['title' => $news->title]))
 @section('content')
 <div class="container">
     <div class="row">

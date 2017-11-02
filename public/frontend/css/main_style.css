@@ -64,7 +64,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: #f3f3f3;
 }
 * {
@@ -3438,4 +3438,8 @@ section#wrng_pg .btns a.orn_btn {
     padding:4px 4px;
     margin:0px;
     border-bottom:1px dotted #555; 
+}
+.cls-small-img {
+    height: 100px;
+    width: 100px;
 }

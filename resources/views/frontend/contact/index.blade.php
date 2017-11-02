@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title', __('Lien he'))
+@section('title', __('Liên hệ'))
 @section('content')
 <div class="container">
     <div class="row">

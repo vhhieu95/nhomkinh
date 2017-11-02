@@ -63,7 +63,7 @@ $(document).ready(function () {
     });
 $(function () {
              $(".demo1").bootstrapNews({
-                 newsPerPage: 5,
+                 newsPerPage: 4,
                  autoplay: true,
          pauseOnHover:true,
                  direction: 'up',

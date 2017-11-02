@@ -8,8 +8,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html"><img src="/frontend/images/logodoor.png" alt="logo">
+
+                <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('frontend/images/logo.png')}}" alt="logo">
                 </a>
             </div>
             <!-- Navigation -->
@@ -19,22 +19,23 @@
                         <a href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="{{ route('san-pham.index') }}"> Sản phẩm</a>
+                        <a href="{{route('san-pham.index')}}"> Sản phẩm</a>
+                        @php
+                            $categories = getCategories();
+                        @endphp
                         <ul class="dropdown-menu">
+                            @foreach($categories as $category)
                             <li>
-                                <a href="property_listing.html">Property Listings </a>
+                                <a href="{{route('danh-muc.san-pham.index', $category->slug)}}">{{$category->name}}</a>
                             </li>
-                            <li>
-                                <a href="property_details.html"> Property Single </a>
-                            </li>
+                            @endforeach
                         </ul>
                     </li>
                     <li>
                         <a href="{{route('du-an.index')}}">Dự án</a>
                     </li>
                     <li>
-                        <a href="{{ route('tin-tuc.index') }}">Tin Tức</a>
-                    </li>
+                        <a href="{{route('tin-tuc.index')}}">Tin Tức</a>
                     <li>
                         <a href="/gioi-thieu">Giới thiệu</a>
                     </li>
@@ -67,7 +68,14 @@
                     <div class="col-md-6">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}}</a> </p>
                         <p class="lnk_pag"> / </p>
-                        <p class="lnk_pag"> Sản Phẩm </p>
+                        <p class="lnk_pag">
+                            @php
+                                $str = explode('/', request()->url());
+                            @endphp
+                            @if(isset($str[3]))
+                            {{$str[3]}}
+                            @endif
+                        </p>
                     </div>
                     <div class="col-md-6 text-right">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}} </a> </p>
