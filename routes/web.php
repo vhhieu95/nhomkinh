@@ -35,4 +35,5 @@ Route::group(['namespace' => 'Frontend'], function() {
     Route::resource('du-an', 'ProjectController')->only(['index', 'show']);
     Route::get('lien-he', 'ContactController@create')->name('lien-he.create');
     Route::post('lien-he', 'ContactController@store')->name('lien-he.store');
+    Route::get('gioi-thieu', 'AboutUsController@index')->name('gioi-thieu.index');
 });

@@ -26,7 +26,7 @@
                 </div>
                 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
                   <label>{{__('Mô tả')}}</label>
-                  <textarea class="ckeditor form-control" name="description">{{$product->description}}</textarea>
+                  <textarea class="form-control" id ="ckeditor" name="description">{{$product->description}}</textarea>
                   @if($errors->first('description'))
                       <span class="help-block">{{$errors->first('description')}}</span>
                   @endif

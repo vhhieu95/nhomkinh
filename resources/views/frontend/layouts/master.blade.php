@@ -64,6 +64,7 @@
 
     
     <script src="{{ asset('frontend/js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
+    <script src="https://uhchat.net/code.php?f=8628f2"></script>
 	
 
 

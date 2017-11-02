@@ -167,14 +167,14 @@
   <section id="testim">
     <div class="container">
       <div class="row testim_sec m0">
-        <div class="testim_box">
+         <div class="testim_box">
           <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
+            Sứ mệnh của House Door chính là đem lại một công trình hoàn hảo,khiến cho quý khách hài lòng là phương châm làm việc của chúng tôi,bạn đang thắc mắc,hãy gọi chúng tôi ngay nhé. House Door điểm nhấn của ngôi nhà Việt.
           </blockquote>
           <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="{{ asset('frontend/images/icon-customer.png') }}" alt="">
             <h6 class="auth_nam">
-              David Greer
+              Nguyễn Văn Hậu
               <span class="auth_pos">
               Ceo Marketing
             </span>
@@ -182,71 +182,29 @@
           </div>
         </div>
         <div class="testim_box">
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
+          <blockquote>          
+            House Door làm việc rất chuyên nghiệp,chất liệu Nhôm của họ rất tốt,trông rất chắn chắn,tôi nghiệm thu Vách kính thì chịu lực rât tốt,giá cả lại phải chăng,anh em thợ làm việc rất nhiệt tình,xong việc mới chịu nghỉ,thật sự chúng tôi rất hài lòng.                 
           </blockquote>
           <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="{{ asset('frontend/images/icon-customer.png') }}" alt="">
             <h6 class="auth_nam">
-              David Greer
+              Nguyễn Thanh Tuấn
               <span class="auth_pos">
-              Ceo Marketing
+              Khách Hàng
             </span>
             </h6>
           </div>
         </div>
         <div class="testim_box">
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
+          <blockquote>          
+            Nhà tôi thực sự sang trong hơn hẳn khi House Door thi công xong,tôi ngắm cả đêm mà vẫn không chán,vách kính cầu thang rất chắc chắn,có lúc bê đồ động phải nhưng không hề hấn gì,cảm ơn các bạn đã giúp tôi có được căn nhà như ý.                 
           </blockquote>
           <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
+            <img src="{{ asset('frontend/images/icon-customer.png') }}" alt="">
             <h6 class="auth_nam">
-              David Greer
+              Trần Văn Thái
               <span class="auth_pos">
-              Ceo Marketing
-            </span>
-            </h6>
-          </div>
-        </div>
-        <div class="testim_box">
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
-          </blockquote>
-          <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
-            <h6 class="auth_nam">
-              David Greer
-              <span class="auth_pos">
-              Ceo Marketing
-            </span>
-            </h6>
-          </div>
-        </div>
-        <div class="testim_box">
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
-          </blockquote>
-          <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
-            <h6 class="auth_nam">
-              David Greer
-              <span class="auth_pos">
-              Ceo Marketing
-            </span>
-            </h6>
-          </div>
-        </div>
-        <div class="testim_box">
-          <blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel nibh vitae sapien lacinia finibus. Etia faucibus lorem in dui laoreet, eget euismod tellus lacinia.
-          </blockquote>
-          <div class="auth_sec">
-            <img src="http://placehold.it/100x100" alt="">
-            <h6 class="auth_nam">
-              David Greer
-              <span class="auth_pos">
-              Ceo Marketing
+              Khách Hàng
             </span>
             </h6>
           </div>
@@ -299,28 +257,7 @@
       </div>
     </div>
   </section>
-  <div class="spacer-60"></div>
-  <section id="subscribe">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-right subs_info">
-          <h5>For Subscribers Only</h5>
-          <h2>Save up to 50% off your next trip</h2>
-        </div>
-        <!-- Subscribe Form -->
-        <div class="col-md-6 text-left subs_form">
-          <form name="sentMessage" id="contactForm2" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." placeholder="Put your email address">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <div class="spacer-60"></div>
   <section id="clients">
     <div class="container">

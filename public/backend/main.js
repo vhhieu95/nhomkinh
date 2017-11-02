@@ -69,6 +69,7 @@ $(document).ready(function() {
                 success: function( msg ) {
                     if (msg.result) {
                         img_item.remove()
+                        // unlink( file-name );
                     }
                     if (img_container.children().length == 0) {
                         img_container.add('<div id="old-images" class="text-info">Không có ảnh</div>').appendTo('#old-images');
@@ -79,4 +80,11 @@ $(document).ready(function() {
         })
     });
 });
-
+// CKEDITOR.replace( 'ckeditor', {   
+//         filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',    
+//         filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',   
+//         filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',    
+//         filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',    
+//         filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',    
+//          filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'    
+//      } );
