@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\Model\Product;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
             'product' => \App\Model\Product::class,
             
         ]);
+        Schema::defaultStringLength(191);
     }
 
     /**
