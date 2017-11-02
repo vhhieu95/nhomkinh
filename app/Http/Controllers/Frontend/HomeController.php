@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Model\Category;
 use App\Model\News;
 use App\Model\Product;
 use App\Model\Project;
