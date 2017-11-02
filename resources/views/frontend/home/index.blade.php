@@ -27,7 +27,7 @@
                                           {{ $product->name }}
                                         </a></p>
                                    
-                                     <p>{{contentLimit($newsproduct->description, 50)}}</p>
+                                     <p>{!!contentLimit($newsproduct->description, 50)!!}</p>
                                    </td>
                                 </tr>
                              </table>
@@ -49,7 +49,7 @@
                 @if(isset($key))
                 <img src="{{asset($key->path)}}" alt="Slider image" />
                 @else
-                <img src="{{ asset(config('constant.default_image')) }}" alt="Slider image" />
+                <img src="{{ asset(config('constant.default_image')) }}" height="400px" with="600px" alt="Slider image" />
                 @endif
                 <div class="slide-info">
                   <p class="sli_price"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{('Chi tiết')}}</a></p>
