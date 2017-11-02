@@ -4,81 +4,45 @@
 			<div class="container">   
 				<div class="row">
 					<!-- About Section -->                
-					<div class="col-md-3 abt_sec">
+					<div class="col-md-4">
 						<h2 class="foot_title">
-				   About Wedoor
-				</h2>
-						<p>
-							Ethical quinoa slow-carb squid, irony Pitchfork tousled hella art party PBR&amp;B cray dreamcatcher brunch.
+				   			Giới Thiệu HouseDoor
+						</h2>
+						<p class="cont_info" style="color:white">
+							Là đơn vị hoạt động trong lĩnh vực xây dựng chuyên nghiệp, House Door  đã chọn cho mình phân khúc chuyên sâu về thị phần Nhôm Kính, chuyên cung ứng vật tư và thi công các hạng mục liên quan đến Nhôm Kính của các công trình xây dựng.
 						</p>
 
 						<div class="spacer-20"></div>
-
-						<p>
-							Bicycle rights jean shorts organic, street art PBR occupy flexitarian pour-over master cleanse farm-to-table.
-
-						</p>
-
-					</div>
-					<!-- Latest Tweets --> 
-					<div class="col-md-3">
-						<h2 class="foot_title">
-				   Latest Tweets
-				</h2>
-						<ul class="tweets">
-							<li> <i class="fa fa-twitter"></i>
-								<p class="twee">
-									Check out this great <a href="#">#themeforest</a> item 'Responsive Photography WordPress <a href="#">http://drbl.in/871942</a>
-								</p>
-
-								<p class="datd"> 6 April 2015 </p>
-								<div class="clearfix"></div>
-							</li>
-
-
-							<li class="spacer-20"></li>
-
-							<li><i class="fa fa-twitter"></i>
-
-								<p class="twee">
-									<a href="#"> #MadeBySeries </a> Made By: Chris Coyier, Founder <a href="#">  http://ow.ly/LeAKf </a>
-								</p>
-
-								<p class="datd"> 6 April 2015 </p>
-								<div class="clearfix"></div>
-							</li>
-						</ul>
-
 					</div>
 					<!-- Contact Info -->
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<h2 class="foot_title">
-				   Contact Info
-				</h2>
+				   			Thông Tin Liên Hệ
+						</h2>
 						<ul class="cont_info">
 							<li><i class="fa fa-map-marker"></i>
-								<p>371 Linden Avenue Longwood, FL 32750 </p>
+								<p>33/6 Lý Văn Phức phường Tân Định Quận 1 TP.HCM  </p>
 							</li>
 							<li><i class="fa fa-phone"></i>
-								<p> <a href="tel:407-546-2034"> Phone: 407-546-2034 </a> </p>
+								<p> <a href="tel:407-546-2034"> Phone: 0906202195 </a> </p>
 							</li>
 							<li><i class="fa fa-envelope"></i>
-								<p> <a href="mailto:connect@crelegant.com?Subject=template%20enquiry"> Email: connect@crelegant.com </a> </p>
+								<p> <a href="mailto:nguyenvanhau@gmail.com?Subject=template%20enquiry"> Email: nguyenvanhau@gmail.com </a> </p>
 							</li>
 						</ul>
 
 					</div>
 					<!-- Useful Links -->
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<h2 class="foot_title">
-							Useful Links
+							Liên Kết
 						</h2>
 						<ul class="foot_nav">
-							<li> <a href="index.html">Home Search</a> </li>
-							<li> <a href="property_listing.html">Properties Inspection</a> </li>
-							<li> <a href="agents.html">Agents Consult</a> </li>
-							<li> <a href="blog.html">Latest News</a> </li>
-							<li> <a href="contact.html">Get in touch</a> </li>
+							<li> <a href="{{ route('home') }}">Trang chủ</a> </li>
+							<li> <a href="{{ route('san-pham.index') }}">Sản Phẩm</a> </li>
+							<li> <a href="{{ route('du-an.index') }}">Dự Án</a> </li>
+							<li> <a href="{{ route('tin-tuc.index') }}">Tin Tức</a> </li>
+							<li> <a href="{{ route('lien-he.create') }}">Liên Hệ</a> </li>
 						</ul>
 
 					</div>
@@ -94,11 +58,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 text-left">
-						<p>&copy; Copyright 2014. All Rights Reserved by <a href="#"> WeDoor </a>
+						<p>&copy; Copyright 2017. All Rights Reserved by <a href="#"> HouseDoor </a>
 						</p>
 					</div>
 					<div class="col-sm-6 text-right">
-						<p>Template developed by <a href="http://themeforest.net/user/crelegant"> The Crelegant Team </a> </p>
+						<p>Template developed by <a href="#"> Hieu Vo </a> </p>
 					</div>
 				</div>
 			</div>

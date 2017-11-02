@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html"><img src="frontend/images/logo.png" alt="logo">
+                <a class="navbar-brand" href="index.html"><img src="/frontend/images/logodoor.png" alt="logo">
                 </a>
             </div>
             <!-- Navigation -->
@@ -39,7 +39,7 @@
                         <a href="/gioi-thieu">Giới thiệu</a>
                     </li>
                     <li>
-                        <a class="" href="/lien-he">Liên hệ</a>
+                        <a class="" href="{{route('lien-he.create')}}">Liên hệ</a>
                     </li>
 
                 </ul>
