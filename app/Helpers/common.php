@@ -1,5 +1,7 @@
 <?php 
 
+use App\Model\Category;
+
 if (!function_exists('isActiveRoute')) {
     
     /**
@@ -73,5 +75,22 @@ if (!function_exists('contentLimit')) {
             UNICODE_FORMAT
         ) . SUFFIX;
         return ($contentLength > $limitLenght) ? $shortencontent : $content;
+    }
+}
+
+if (!function_exists('getCategories')) {
+    
+    /**
+     * Active menu side bar when route menu is current route
+     *
+     * @param string $route  route of page
+     * @param string $output active or ''
+     *
+     * @return string
+     */
+    function getCategories()
+    {
+        $categories = Category::select('id', 'name', 'slug')->orderby('id', 'DESC')->limit(10)->get();
+        return $categories;
     }
 }

@@ -19,14 +19,16 @@
                         <a href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="#"> Sản phẩm</a>
+                        <a href="{{route('san-pham.index')}}"> Sản phẩm</a>
+                        @php
+                            $categories = getCategories();
+                        @endphp
                         <ul class="dropdown-menu">
+                            @foreach($categories as $category)
                             <li>
-                                <a href="property_listing.html">Property Listings </a>
+                                <a href="{{route('danh-muc.san-pham.index', $category->slug)}}">{{$category->name}}</a>
                             </li>
-                            <li>
-                                <a href="property_details.html"> Property Single </a>
-                            </li>
+                            @endforeach
                         </ul>
                     </li>
                     <li>
