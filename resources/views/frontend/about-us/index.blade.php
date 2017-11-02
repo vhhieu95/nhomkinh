@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title', __('Gioi thieu'))
+@section('title', __('Giới Thiệu'))
 @section('content')
 <div class="container">
     <div class="row">
@@ -9,19 +9,20 @@
             <div class="row skill_sec">
                 <div class="titl_sec">
                     <div class="col-lg-12">
-
                         <h3 class="main_titl text-left">
-                our skills
-            </h3>
+                            Tại sao chọn House Door?
+                        </h3>
 
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-xs-12 skill_ara">
                     <div class="col-sm-5 p0">
-                        <p class="m0"> Post-ironic Truffaut gluten-free photo booth, DIY fingerstache mixtape Etsy next level typewriter chambray stumptown flexitarian kogi distillery. </p>
+                        <p class="m0" style="font-size: 15px; color: black;">Công ty CP House Door Việt Nam là đơn vị hàng đầu trong lĩnh vực tư vấn thiết kế, thi công các dòng sản phẩm về cửa và vách nhôm kính cao cấp.
+                        Với đội ngũ kỹ sư có nhiều kinh nghiệm trong lĩnh vực nhôm kính, cùng đội ngũ thợ trẻ, năng động, sáng tạo nhiệt tình trong công việc.
+                        Chúng tôi được khách hàng nhiều nơi tín nhiệm, được tham gia hoàn thiện nhiều công trình lớn và trọng điểm. </p>
                         <div class="spacer-30"></div>
-                        <p class="m0"> Kale chips scenester ethical, squid keffiyeh craft beer post-ironic four dollar toast banjo messenger bag typewriter. Trust fund squid Wes Anderson fingerstache. </p>
+                        {{-- <p class="m0"> Kale chips scenester ethical, squid keffiyeh craft beer post-ironic four dollar toast banjo messenger bag typewriter. Trust fund squid Wes Anderson fingerstache. </p> --}}
                     </div>
                     <div class="col-sm-7 p0">
                         <div class="prog_sec">
