@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- Logo -->
+
                 <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('frontend/images/logo.png')}}" alt="logo">
                 </a>
             </div>
@@ -36,14 +36,8 @@
                     </li>
                     <li>
                         <a href="{{route('tin-tuc.index')}}">Tin Tức</a>
-                    </li>
                     <li>
-                        <a href="blog.html">Giới thiệu</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-single.html"> Blog Single </a>
-                            </li>
-                        </ul>
+                        <a href="/gioi-thieu">Giới thiệu</a>
                     </li>
                     <li>
                         <a class="" href="{{route('lien-he.create')}}">Liên hệ</a>
@@ -59,13 +53,13 @@
     <!-- Header Stat Banner -->
     <header id="banner" class="stat_bann">
         <div class="bannr_sec">
-            <img src="http://placehold.it/1350x900" alt="Banner">
+            <img src="{{ asset('frontend/images/slide-img.jpg') }}" alt="Banner">
             <h1 class="main_titl">
-            Best Real Estate Deals site
-        </h1>
+                House Door - Cửa kính cao cấp
+            </h1>
             <h4 class="sub_titl">
-            Wes Anderson American Apparel
-        </h4>
+                Đẳng cấp cho ngôi nhà của bạn
+            </h4>
 
         </div>
         <div class="pg_links">

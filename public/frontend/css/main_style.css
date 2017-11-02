@@ -3411,6 +3411,34 @@ section#wrng_pg .btns a.orn_btn {
 .height {
     height: 487px;  
 }
+﻿.glyphicon
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon
+{
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a
+{
+    color:#555;
+}
+
+.panel ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item
+{
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555; 
+}
 .cls-small-img {
     height: 100px;
     width: 100px;

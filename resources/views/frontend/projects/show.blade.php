@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title', __('Chi tiet du an'))
+@section('title', __(':title', ['title' => $project->title]))
 @section('content')
 <div class="container">
   <div class="row">
@@ -9,28 +9,7 @@
       <div class="agen_info2">
         <div class="col-md-5">
           <img class="img-responsive cls-img" src="{{asset($project->image)}}" alt="">
-          <div class="cont_frm2">
-            <h2 class="frm_titl">{{('Liên hệ')}}</h2>
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group form-group first">
-                <div class="controls">
-                  <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." placeholder="Your Name">
-                  <p class="help-block"></p>
-                </div>
-                <div class="controls">
-                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter an email address." placeholder="Email Address">
-
-                    <p class="help-block"></p>
-                </div>
-                <div class="controls">
-                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" placeholder="Message Box"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">{{('Gửi')}}</button>
-                <div id="success"></div>
-                <!-- For success/fail messages -->
-              </div>
-            </form>
-          </div>
+          
         </div>
         <div class="col-md-7">
           <div class="panel panel-default ">
@@ -53,12 +32,11 @@
               <div class="panel_bottom">
                 <div class="agen_feat">
                   <p class="area">
-                      <a href="tel:910-213-7890"> <i class="fa fa-phone"></i> 910-213-7890 </a>
+                      <a href="tel: 0906202195"> <i class="fa fa-phone"></i>  0906202195 </a>
                   </p>
                   <p class="bedrom">
-                      <a href="mailto:scott@berends.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> scott@berends.com </a>
+                      <a href="mailto:nguyenvanhau@gmail.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> nguyenvanhau@gmail.com </a>
                   </p>
-                  <p class="bedrom"><a href="skype:-scottberends1-?chat"><i class="fa fa-skype"></i> scottberends1 </a> </p>
                 </div>
               </div>
             </div>

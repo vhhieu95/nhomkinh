@@ -13,7 +13,9 @@
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet">
-
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+     {{-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> --}}
+     {{-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> --}}
 	<!-- Owl Carousel Assets -->
 	<link href="{{ asset('frontend/css/owl.carousel.css') }}" rel="stylesheet">
 	<link href="{{ asset('frontend/css/owl.theme.css') }}" rel="stylesheet">
@@ -45,6 +47,7 @@
 	@include('frontend.layouts.partials.footer')
 
 	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ asset('frontend/js/jquery.js') }}"></script>
 
 	<!-- Bootstrap Core JavaScript -->
@@ -58,6 +61,9 @@
 	<script type="text/javascript" src="{{ asset('frontend/js/custom.js') }}"></script>
     <!-- BX Slider -->
     <script type="text/javascript" src="{{ asset('frontend/js/jquery.bxslider.min.js') }}"></script>
+
+    
+    <script src="{{ asset('frontend/js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
 	
 
 

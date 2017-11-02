@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title', __('Chi tiet san pham'))
+@section('title', __(':title', ['title' => $products->name]))
 @section('content')
     <div class="spacer-60"></div>
     <div class="container">

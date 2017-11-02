@@ -5,38 +5,52 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="srch_frm height">
-            <div>
-              <span href="#" class="list-group-item active">
-                  Submenu
-              </span>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-comment-o"></i> Lorem ipsum
-              </a>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-search"></i> Lorem ipsum
-              </a>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-user"></i> Lorem ipsum
-              </a>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
-              </a>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>
-              </a>
-              <a href="#" class="list-group-item">
-                  <i class="fa fa-envelope"></i> Lorem ipsum
-              </a>
-            </div>     
-          </div>
+           <div class="panel panel-default">
+              <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b> Sản Phẩm Mới </b></div>
+              <div class="panel-body">
+                 <div class="row">
+                    <div class="col-xs-12">
+                       <ul class="demo1">
+                          @foreach($products as $product)
+                          <li class="news-item">
+                             <table cellpadding="4">
+                                <tr>
+                                   <td style="padding-right: 10px">
+                                    @if(isset($product->images[0]))
+                                      <img class="img-circle" width="80px" src="{{asset($product->images[0]->path)}}">
+                                    @else
+                                       <img class="img-circle" width="80" src="{{asset(config('constant.default_image' ))}}">
+                                    @endif
+                                  </td>
+                                   <td>
+                                     <p><a href="{{route('san-pham.show', $newsproduct->slug)}}">
+                                          {{ $product->name }}
+                                        </a></p>
+                                   
+                                     <p>{{contentLimit($newsproduct->description, 50)}}</p>
+                                   </td>
+                                </tr>
+                             </table>
+                          </li>
+                        @endforeach
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel-footer"> </div>
+           </div>
+        
         </div>
         <div class="col-md-8 slide_sec">
           <div id="slider" class="silde_img flexslider">
             <ul class="slides">
               @foreach($newsproduct->images as $key)
               <li>
+                @if(isset($key))
                 <img src="{{asset($key->path)}}" alt="Slider image" />
+                @else
+                <img src="{{ asset(config('constant.default_image')) }}" alt="Slider image" />
+                @endif
                 <div class="slide-info">
                   <p class="sli_price"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{('Chi tiết')}}</a></p>
                   <p class="sli_titl">{{$newsproduct->name}} </p>
@@ -251,7 +265,7 @@
           </div>
           <div class="col-xs-6">
             <h3 class="link_titl text-right">
-              <a href="blog.html">{{ ('Xem tất cả') }}</a>
+              <a href="{{ route('tin-tuc.index') }}">{{ ('Xem tất cả') }}</a>
             </h3>
           </div>
           <div class="clearfix"></div>
@@ -261,17 +275,23 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-image">
-              <img class="img-responsive cls-img" src="{{ (isset($value->image)) ? $value->image : asset(config('constant.default_thumbnail')) }}" alt="">
+              <a href="{{ route('tin-tuc.show', $value->slug) }}">
+                <img class="img-responsive cls-img" src="{{ (isset($value->image)) ? $value->image : asset(config('constant.default_thumbnail')) }}" alt="{{ $value->title }}">
+              </a>
             </div>
             <div class="panel-body">
               <div class="news_dtd">
-                <p>{{$value->created_at }} <a href="#"> John Doe </a> </p>
+                <p>{{$value->created_at }} <a href="#"> Admin </a> </p>
               </div>
-              <h3 class="sec_titl">{{$value->title}}</h3>
+              <h3 class="sec_titl">
+                <a href="{{ route('tin-tuc.show', $value->slug) }}">
+                  {{$value->title}}
+                </a>
+              </h3>
               <p class="sec_desc">
                 {{ contentLimit($value->description, 70)}}
               </p>
-              <p class="readmore text-left"> <a href="blog-single.html">{{ ('Chi tiết ') }}</a> </p>
+              <p class="readmore text-left"> <a href="{{ route('tin-tuc.show', $value->slug) }}">{{ ('Chi tiết ') }}</a> </p>
             </div>
           </div>
         </div>
