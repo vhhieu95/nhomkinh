@@ -42,17 +42,4 @@ class ProductController extends Controller
 
         return view('frontend.products.show', compact('product', 'productDiff'));
     }
-
-    // public function showProduct()
-    // {
-    //     $columns = [
-    //         'id',
-    //         'name',
-    //         'slug'
-    //     ];
-    //     $Newproducts = Product::select($columns)
-    //         ->orderby('id', 'DESC')->limit(4);
-    //         dd($Newproducts);
-    //     return view('frontend.layouts.partials.footer', compact('Newproducts'));
-    // }
 }
