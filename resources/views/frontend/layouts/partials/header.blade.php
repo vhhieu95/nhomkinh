@@ -19,7 +19,7 @@
                         <a href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="#"> Sản phẩm</a>
+                        <a href="{{ route('san-pham.index') }}"> Sản phẩm</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="property_listing.html">Property Listings </a>
@@ -33,18 +33,13 @@
                         <a href="{{route('du-an.index')}}">Dự án</a>
                     </li>
                     <li>
-                        <a href="features.html">Tin Tức</a>
+                        <a href="{{ route('tin-tuc.index') }}">Tin Tức</a>
                     </li>
                     <li>
-                        <a href="blog.html">Giới thiệu</a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-single.html"> Blog Single </a>
-                            </li>
-                        </ul>
+                        <a href="/gioi-thieu">Giới thiệu</a>
                     </li>
                     <li>
-                        <a class="" href="contact.html">Liên hệ</a>
+                        <a class="" href="/lien-he">Liên hệ</a>
                     </li>
 
                 </ul>
@@ -57,13 +52,13 @@
     <!-- Header Stat Banner -->
     <header id="banner" class="stat_bann">
         <div class="bannr_sec">
-            <img src="http://placehold.it/1350x900" alt="Banner">
+            <img src="{{ asset('frontend/images/slide-img.jpg') }}" alt="Banner">
             <h1 class="main_titl">
-            Best Real Estate Deals site
-        </h1>
+                House Door - Cửa kính cao cấp
+            </h1>
             <h4 class="sub_titl">
-            Wes Anderson American Apparel
-        </h4>
+                Đẳng cấp cho ngôi nhà của bạn
+            </h4>
 
         </div>
         <div class="pg_links">
@@ -72,7 +67,7 @@
                     <div class="col-md-6">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}}</a> </p>
                         <p class="lnk_pag"> / </p>
-                        <p class="lnk_pag"> Property Listing </p>
+                        <p class="lnk_pag"> Sản Phẩm </p>
                     </div>
                     <div class="col-md-6 text-right">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}} </a> </p>

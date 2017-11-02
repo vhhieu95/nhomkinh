@@ -91,7 +91,11 @@
             <ul class="slides">
               @foreach($newsproduct->images as $key)
               <li>
+                @if(isset($key))
                 <img src="{{asset($key->path)}}" alt="Slider image" />
+                @else
+                <img src="{{ asset(config('constant.default_image')) }}" alt="Slider image" />
+                @endif
                 <div class="slide-info">
                   <p class="sli_price"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{('Chi tiết')}}</a></p>
                   <p class="sli_titl">{{$newsproduct->name}} </p>
@@ -306,7 +310,7 @@
           </div>
           <div class="col-xs-6">
             <h3 class="link_titl text-right">
-              <a href="blog.html">{{ ('Xem tất cả') }}</a>
+              <a href="{{ route('tin-tuc.index') }}">{{ ('Xem tất cả') }}</a>
             </h3>
           </div>
           <div class="clearfix"></div>
@@ -316,17 +320,23 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-image">
-              <img class="img-responsive cls-img" src="{{ (isset($value->image)) ? $value->image : asset(config('constant.default_thumbnail')) }}" alt="">
+              <a href="{{ route('tin-tuc.show', $value->slug) }}">
+                <img class="img-responsive cls-img" src="{{ (isset($value->image)) ? $value->image : asset(config('constant.default_thumbnail')) }}" alt="{{ $value->title }}">
+              </a>
             </div>
             <div class="panel-body">
               <div class="news_dtd">
-                <p>{{$value->created_at }} <a href="#"> John Doe </a> </p>
+                <p>{{$value->created_at }} <a href="#"> Admin </a> </p>
               </div>
-              <h3 class="sec_titl">{{$value->title}}</h3>
+              <h3 class="sec_titl">
+                <a href="{{ route('tin-tuc.show', $value->slug) }}">
+                  {{$value->title}}
+                </a>
+              </h3>
               <p class="sec_desc">
                 {{ contentLimit($value->description, 70)}}
               </p>
-              <p class="readmore text-left"> <a href="blog-single.html">{{ ('Chi tiết ') }}</a> </p>
+              <p class="readmore text-left"> <a href="{{ route('tin-tuc.show', $value->slug) }}">{{ ('Chi tiết ') }}</a> </p>
             </div>
           </div>
         </div>
