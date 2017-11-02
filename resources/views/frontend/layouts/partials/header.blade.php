@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="" href="contact.html">Liên hệ</a>
+                        <a class="" href="{{route('lien-he.create')}}">Liên hệ</a>
                     </li>
 
                 </ul>
