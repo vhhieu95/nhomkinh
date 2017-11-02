@@ -1,6 +1,8 @@
 <?php 
 
 use App\Model\Category;
+use App\Model\News;
+use App\Model\Product;
 
 if (!function_exists('isActiveRoute')) {
     
@@ -92,5 +94,49 @@ if (!function_exists('getCategories')) {
     {
         $categories = Category::select('id', 'name', 'slug')->orderby('id', 'DESC')->limit(10)->get();
         return $categories;
+    }
+}
+
+if (!function_exists('getNewsProduct')) {
+    
+    /**
+     * Active menu side bar when route menu is current route
+     *
+     * @param string $route  route of page
+     * @param string $output active or ''
+     *
+     * @return string
+     */
+    function getNewsProduct()
+    {
+        $newsproducts = Product::select('id', 'name', 'description', 'slug', 'category_id', 'created_at')->orderby('created_at', 'DESC')->limit(3)->get();
+        return $newsproducts;
+    }
+}
+
+if (!function_exists('getNews')) {
+    
+    /**
+     * Active menu side bar when route menu is current route
+     *
+     * @param string $route  route of page
+     * @param string $output active or ''
+     *
+     * @return string
+     */
+    function getNews()
+    {
+        $columns = [
+            'id',
+            'title',
+            'slug',
+            'image',
+            'description',
+            'content'
+        ];
+            
+        $news = News::select($columns)
+            ->orderby('id', 'DESC')->limit(3)->get();
+        return $news;
     }
 }

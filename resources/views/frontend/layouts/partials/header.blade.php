@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html"><img src="frontend/images/logo.png" alt="logo">
+                <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('frontend/images/logo.png')}}" alt="logo">
                 </a>
             </div>
             <!-- Navigation -->
@@ -35,7 +35,7 @@
                         <a href="{{route('du-an.index')}}">Dự án</a>
                     </li>
                     <li>
-                        <a href="features.html">Tin Tức</a>
+                        <a href="{{route('tin-tuc.index')}}">Tin Tức</a>
                     </li>
                     <li>
                         <a href="blog.html">Giới thiệu</a>
@@ -74,7 +74,14 @@
                     <div class="col-md-6">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}}</a> </p>
                         <p class="lnk_pag"> / </p>
-                        <p class="lnk_pag"> Property Listing </p>
+                        <p class="lnk_pag">
+                            @php
+                                $str = explode('/', request()->url());
+                            @endphp
+                            @if(isset($str[3]))
+                            {{$str[3]}}
+                            @endif
+                        </p>
                     </div>
                     <div class="col-md-6 text-right">
                         <p class="lnk_pag"><a href="{{route('home')}}">{{('Trang chủ')}} </a> </p>
