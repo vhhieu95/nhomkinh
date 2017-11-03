@@ -45,7 +45,7 @@
 
                         <div class="panel-body">
                             <div class="prop_feat">
-                                <p class="area"><i class="fa fa-phone"></i> Liên Hệ: 0905123456</p>
+                                <p class="area"><i class="fa fa-phone"></i> Liên Hệ: 0906.202.195</p>
                                 <div class="share_btn">
                                     <a href="#"> <i class="fa fa-share-alt"></i>
                                     </a>
@@ -67,7 +67,7 @@
 
                             <div class="col_labls larg_labl">
                                 <p class="or_labl">{{ $product->category->name }}</p>
-                                <p class="blu_labl"> 0905123456</p>
+                                <p class="blu_labl"> 0906.202.195</p>
                             </div>
                             <p class="sec_desc">
                                 {!! $product->description !!}
@@ -107,7 +107,7 @@
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="soc_icon">                                          
-                                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                                <a href="https://www.facebook.com/nhomkinhgovap/"> <i class="fa fa-facebook"></i> </a>
                                             </div>
 
                                         </div>
@@ -118,12 +118,12 @@
                                     <div class="panel_bottom">
                                         <div class="agen_feat">
                                             <p class="area">
-                                                <a href="tel:910-213-7890"> <i class="fa fa-phone"></i> 0905123456 </a>
+                                                <a href="tel:910-213-7890"> <i class="fa fa-phone"></i> 0906.202.195 </a>
                                             </p>
                                             <p class="bedrom">
-                                                <a href="#"> <i class="fa fa-envelope"></i> huuhieucntt@gmail.com </a>
+                                                <a href="#"> <i class="fa fa-envelope"></i> phamvanhau@gmail.com </a>
                                             </p>
-                                            <p class="bedrom"><a href="#"><i class="fa fa-skype"></i> scottberends1 </a> </p>
+                                            <p class="bedrom"><a href="https://www.facebook.com/nhomkinhgovap/"><i class="fa fa-facbook"></i> Nhôm Kính Cao Cấp </a> </p>
                                         </div>
                                     </div>
                                 </div>

@@ -12,4 +12,4 @@ yarn-error.log
 .env
 composer.lock
 public/bower_components/
-public/images/
+#public/images/
