@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="panel-body">
-              <h3 class="sec_titl">{{ $product->name }}</h3>
+              <h3 class="sec_titl"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{ $product->name }}</a></h3>
               <p class="sec_desc">
                 {!! contentLimit($product->description, 70) !!}
               </p>
@@ -174,7 +174,7 @@
           <div class="auth_sec">
             <img src="{{ asset('frontend/images/icon-customer.png') }}" alt="">
             <h6 class="auth_nam">
-              Nguyễn Văn Hậu
+              Phạm Văn Hậu
               <span class="auth_pos">
               Ceo Marketing
             </span>
