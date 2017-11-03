@@ -151,7 +151,7 @@
               <p class="sec_desc text-center">{!! contentLimit($project->description, 50) !!}</p>
               <div class="panel_hidd">
                 <hr>
-                <small class="phon text-center"> <a href="">{{ ('Số điện thoại: 253-891-8159') }}</a></small>
+                <small class="phon text-center"> <a href="">{{ ('Số điện thoại:  0906.202.195') }}</a></small>
                 <div class="soc_icon">
                   <a href=""> <i class="fa fa-facebook"></i> </a>
                 </div>
