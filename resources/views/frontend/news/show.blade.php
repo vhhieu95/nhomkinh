@@ -22,6 +22,7 @@
                             <p class="bedrom"><i class="fa fa-comment"></i> Bình Luận <span> :: </span>
                             </p>
                             <p class="bedrom"><i class="fa fa-clock-o"></i> {{ $day }} </p>
+                            <p class="fb-share-button" data-href="{{ route('tin-tuc.show', $news->slug ) }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a></p>
                         </div>
                         <h3 class="sec_titl">
                             {{ $news->title }}     
@@ -33,6 +34,7 @@
                         <p class="sec_desc">
                             {!! $news->content !!}
                         </p>
+
                         <div class="row nxt_pos">
                             <div class="col-md-5">
                                 <a href="{{ route('tin-tuc.show', $newsDiff->slug ) }}" title="{{ $newsDiff->name }}">
@@ -55,6 +57,8 @@
                 </div>
             </div>
             <!-- /.row -->
+            
+            
 
             <div class="spacer-30"></div>
             <!-- Comment Section -->
