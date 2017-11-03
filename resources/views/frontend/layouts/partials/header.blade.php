@@ -1,3 +1,18 @@
+<a href="tel:0906202195" class="fancybox">
+   <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="left:0%; top:67%">
+    <h4 style="margin: 25px 35px 0px 54px; color:white; background:red; ">0906.202.195</h4>
+      <div class="coccoc-alo-ph-circle">
+      </div>
+      <div class="coccoc-alo-ph-circle-fill">
+      </div>
+      <div class="coccoc-alo-ph-img-circle">
+      </div>
+      <div>
+        
+     </div>
+   </div>
+
+</a>
 <nav class="navbar" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->

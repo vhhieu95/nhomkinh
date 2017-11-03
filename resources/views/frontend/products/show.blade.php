@@ -150,7 +150,9 @@
                     </div>
                     <div class="col-md-12">
                         <div class="prop_map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3023.0855969237605!2d-73.99038!3d40.738141999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a238556ce7%3A0x3445b7afb4f445e3!2sTaz+Studios!5e0!3m2!1sen!2sin!4v1432831471606" width="600" height="350"></iframe>
+                           
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3919.265682215546!2d106.69143204982548!3d10.790951961839736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1509673531047" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
                         </div>
 
                     </div>
