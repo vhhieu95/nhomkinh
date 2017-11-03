@@ -20,7 +20,8 @@
                 </div>
                 <div class="col-md-5 p0">
                   <div class="soc_icon">
-                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    {{-- <a href="#"> <i class="fa fa-facebook"></i> </a> --}}
+                    <div class="fb-share-button" data-href="{{ route('du-an.show', $project->slug ) }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a></div>
                   </div>
                 </div>
               </div>

@@ -45,7 +45,10 @@
 
                         <div class="panel-body">
                             <div class="prop_feat">
-                                <p class="area"><i class="fa fa-phone"></i> Liên Hệ: 0906.202.195</p>
+                                <p class="area">
+                                
+                                    <div class="fb-share-button" data-href="{{ route('san-pham.show', $product->slug ) }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a></div>
+                                </p>
                                 <div class="share_btn">
                                     <a href="#"> <i class="fa fa-share-alt"></i>
                                     </a>
