@@ -7,8 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="Cửa Hàng Nhom Kính Khung Cửa Hàng Đầu Việt Nam" content="">
+	<meta name="House Door" content="">
 
 	<title>@yield('title')</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -87,6 +87,8 @@
     
     <script src="{{ asset('frontend/js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
     <script src="https://uhchat.net/code.php?f=8628f2"></script>
+
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a03bc77bbcbd1001145780f&product=sticky-share-buttons"></script>
 	
 
 
