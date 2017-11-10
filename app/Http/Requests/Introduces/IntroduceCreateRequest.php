@@ -24,8 +24,8 @@ class IntroduceCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100',
-            'content' => 'required|max:5000',
+            'title' => 'required',
+            'content' => 'required',
         ];
     }
 }

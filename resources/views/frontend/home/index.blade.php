@@ -27,7 +27,7 @@
                                           {{ $product->name }}
                                         </a></p>
                                    
-                                     <p>{{contentLimit($newsproduct->description, 50)}}</p>
+                                     <p>{!!contentLimit($newsproduct->description, 50)!!}</p>
                                    </td>
                                 </tr>
                              </table>
@@ -49,12 +49,12 @@
                 @if(isset($key))
                 <img src="{{asset($key->path)}}" alt="Slider image" />
                 @else
-                <img src="{{ asset(config('constant.default_image')) }}" alt="Slider image" />
+                <img src="{{ asset(config('constant.default_image')) }}" height="400px" with="600px" alt="Slider image" />
                 @endif
                 <div class="slide-info">
                   <p class="sli_price"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{('Chi tiết')}}</a></p>
                   <p class="sli_titl">{{$newsproduct->name}} </p>
-                  <p class="sli_desc"> {{contentLimit($newsproduct->description, 100)}}</p>
+                  <p class="sli_desc"> {!! contentLimit($newsproduct->description, 100) !!}</p>
                 </div>
               </li>
               @endforeach
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="panel-body">
-              <h3 class="sec_titl">{{ $product->name }}</h3>
+              <h3 class="sec_titl"><a href="{{route('san-pham.show', $newsproduct->slug)}}">{{ $product->name }}</a></h3>
               <p class="sec_desc">
                 {!! contentLimit($product->description, 70) !!}
               </p>
@@ -148,10 +148,10 @@
               <h3 class="sec_titl text-center">
                 <a href="{{route('du-an.show', $project->slug)}}">{{ $project->title }}</a>
               </h3>  
-              <p class="sec_desc text-center">{{ contentLimit($project->description, 50) }}</p>
+              <p class="sec_desc text-center">{!! contentLimit($project->description, 50) !!}</p>
               <div class="panel_hidd">
                 <hr>
-                <small class="phon text-center"> <a href="">{{ ('Số điện thoại: 253-891-8159') }}</a></small>
+                <small class="phon text-center"> <a href="">{{ ('Số điện thoại:  0906.202.195') }}</a></small>
                 <div class="soc_icon">
                   <a href=""> <i class="fa fa-facebook"></i> </a>
                 </div>
@@ -174,7 +174,7 @@
           <div class="auth_sec">
             <img src="{{ asset('frontend/images/icon-customer.png') }}" alt="">
             <h6 class="auth_nam">
-              Nguyễn Văn Hậu
+              Phạm Văn Hậu
               <span class="auth_pos">
               Ceo Marketing
             </span>
@@ -247,7 +247,7 @@
                 </a>
               </h3>
               <p class="sec_desc">
-                {{ contentLimit($value->description, 70)}}
+                {!! contentLimit($value->description, 70) !!}
               </p>
               <p class="readmore text-left"> <a href="{{ route('tin-tuc.show', $value->slug) }}">{{ ('Chi tiết ') }}</a> </p>
             </div>

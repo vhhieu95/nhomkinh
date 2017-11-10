@@ -6,10 +6,13 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}">
+	<meta name="Cửa Hàng Nhom Kính Khung Cửa Hàng Đầu Việt Nam" content="">
+	<meta name="House Door" content="">
 
 	<title>@yield('title')</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet">
@@ -33,6 +36,25 @@
 	<link href="{{ asset('frontend/css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 </head>
 
@@ -65,6 +87,8 @@
     
     <script src="{{ asset('frontend/js/jquery.bootstrap.newsbox.min.js') }}" type="text/javascript"></script>
     <script src="https://uhchat.net/code.php?f=8628f2"></script>
+
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a03bc77bbcbd1001145780f&product=sticky-share-buttons"></script>
 	
 
 

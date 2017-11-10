@@ -4,7 +4,7 @@
 			<div class="container">   
 				<div class="row">
 					<!-- About Section -->                
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<h2 class="foot_title">
 				   			Giới Thiệu HouseDoor
 						</h2>
@@ -15,7 +15,7 @@
 						<div class="spacer-20"></div>
 					</div>
 					<!-- Contact Info -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<h2 class="foot_title">
 				   			Thông Tin Liên Hệ
 						</h2>
@@ -24,16 +24,19 @@
 								<p>33/6 Lý Văn Phức phường Tân Định Quận 1 TP.HCM  </p>
 							</li>
 							<li><i class="fa fa-phone"></i>
-								<p> <a href="tel:407-546-2034"> Phone: 0906202195 </a> </p>
+								<p> <a href="tel:407-546-2034"> Phone: 0906.202.195 </a> </p>
 							</li>
 							<li><i class="fa fa-envelope"></i>
-								<p> <a href="mailto:nguyenvanhau@gmail.com?Subject=template%20enquiry"> Email: nguyenvanhau@gmail.com </a> </p>
+								<p> <a href="mailto:phamvanhau@gmail.com?Subject=template%20enquiry"> Email: phamvanhau@gmail.com </a> </p>
+							</li>
+							<li><i class="fa fa-facebook"></i>
+								<p> <a href="https://www.facebook.com/nhomkinhgovap/"> Nhôm Kính Cao Cấp Sài Gòn</a> </p>
 							</li>
 						</ul>
 
 					</div>
 					<!-- Useful Links -->
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<h2 class="foot_title">
 							Liên Kết
 						</h2>
@@ -43,6 +46,27 @@
 							<li> <a href="{{ route('du-an.index') }}">Dự Án</a> </li>
 							<li> <a href="{{ route('tin-tuc.index') }}">Tin Tức</a> </li>
 							<li> <a href="{{ route('lien-he.create') }}">Liên Hệ</a> </li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-3">
+						<h2 class="foot_title">
+				   			Thống Kê Truy Cập
+						</h2>
+						<ul class="cont_info">
+							<li>
+								<p>Lượt truy cập hôm nay: 500</p>
+							</li>
+							<li>
+								<p>Lượt truy cập hôm qua: 630</p>
+							</li>
+							<li>
+								<p>Chuyến thăm tháng: 12 893</p>
+							</li>
+							<li>
+								<p>Tất cả chuyến thăm: 145 936</p>
+							</li>
 						</ul>
 
 					</div>
