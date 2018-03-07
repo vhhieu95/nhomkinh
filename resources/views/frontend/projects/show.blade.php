@@ -36,7 +36,7 @@
                       <a href="tel: 0906202195"> <i class="fa fa-phone"></i>  0906202195 </a>
                   </p>
                   <p class="bedrom">
-                      <a href="mailto:nguyenvanhau@gmail.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> nguyenvanhau@gmail.com </a>
+                      <a href="mailto:Housedoor.qtp@gmail.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> Housedoor.qtp@gmail.com </a>
                   </p>
                 </div>
               </div>

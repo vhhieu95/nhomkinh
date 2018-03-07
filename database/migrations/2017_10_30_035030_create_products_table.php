@@ -15,9 +15,9 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('name');
+            $table->string('name', 190);
             $table->text('description');
-            $table->text('slug')->unique();
+            $table->string('slug')->unique();
             $table->integer('category_id')->unsigned();
             $table->softDeletes();
             

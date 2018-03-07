@@ -27,7 +27,7 @@ $factory->define(App\Model\User::class, function (Faker $faker) {
 $factory->define(App\Model\Introduction::class, function (Faker $faker) {
 
     return [
-        'title' => $faker->text,
+        'title' => $faker->company,
         'content' => $faker->text,
     ];
 });

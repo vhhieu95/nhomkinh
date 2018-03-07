@@ -261,38 +261,38 @@
   <div class="spacer-60"></div>
   <section id="clients">
     <div class="container">
-      <div id="owl-carousel" class="row">
-        <h2 class="hide"> Our Clients </h2>
+      <div id="owl-carousel" class="row">        
+        <h2 class="hide"> Đối Tác Của Chúng Tôi </h2>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x27" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac1.jpg') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x38" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac2.jpg') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x36" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac4.jpg') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x30" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac5.png') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x33" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac6.png') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x27" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac7.jpg') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x36" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac8.png') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
         <div class="owl_col">
-          <div class="mid_img"> <img class="img-responsive customer-img" src="http://placehold.it/160x31" alt="">
+          <div class="mid_img"> <img class="img-responsive customer-img" src="{{ asset('frontend/images/doitac9.jpg') }}" alt="Doi tac cua chung toi">
           </div>
         </div>
       </div>

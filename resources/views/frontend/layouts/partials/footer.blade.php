@@ -27,7 +27,7 @@
 								<p> <a href="tel:407-546-2034"> Phone: 0906.202.195 </a> </p>
 							</li>
 							<li><i class="fa fa-envelope"></i>
-								<p> <a href="mailto:phamvanhau@gmail.com?Subject=template%20enquiry"> Email: phamvanhau@gmail.com </a> </p>
+								<p> <a href="mailto:Housedoor.qtp@gmail.com?Subject=template%20enquiry"> Email: Housedoor.qtp@gmail.com </a> </p>
 							</li>
 							<li><i class="fa fa-facebook"></i>
 								<p> <a href="https://www.facebook.com/nhomkinhgovap/"> Nhôm Kính Cao Cấp Sài Gòn</a> </p>

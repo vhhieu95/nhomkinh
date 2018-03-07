@@ -124,7 +124,7 @@
                                                 <a href="tel:910-213-7890"> <i class="fa fa-phone"></i> 0906.202.195 </a>
                                             </p>
                                             <p class="bedrom">
-                                                <a href="#"> <i class="fa fa-envelope"></i> phamvanhau@gmail.com </a>
+                                                <a href="#"> <i class="fa fa-envelope"></i> Housedoor.qtp@gmail.com </a>
                                             </p>
                                             <p class="bedrom"><a href="https://www.facebook.com/nhomkinhgovap/"><i class="fa fa-facbook"></i> Nhôm Kính Cao Cấp </a> </p>
                                         </div>
@@ -152,13 +152,10 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="col-md-12">
-                        <div class="prop_map">
-                           
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3919.265682215546!2d106.69143204982548!3d10.790951961839736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1509673531047" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                        </div>
-
+                    <div class="map_ara">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2642281208146!2d106.69153914958942!3d10.791063492273844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528cc9ee44733%3A0x863342a33fd220e!2zMzMgTMO9IFbEg24gUGjhu6ljLCBUw6JuIMSQ4buLbmgsIFF14bqtbiAxLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1509590011038" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+                </div>
                 </div>
                 <!-- /.row -->
 
