@@ -50,10 +50,10 @@
                         <a href="{{route('du-an.index')}}">Dự án</a>
                     </li>
                     <li>
-                        <a href="#">Báo Giá</a>
+                        <a href="/bao-gia">Báo Giá</a>
                     </li>
                     <li>
-                        <a href="#">Tuyển Dụng</a>
+                        <a href="/tuyen-dung">Tuyển Dụng</a>
                     </li>
                     <li>
                         <a href="{{route('tin-tuc.index')}}">Tin Tức</a>
