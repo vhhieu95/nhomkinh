@@ -13,7 +13,7 @@
     <h3 class="main_titl text-left">
                {{('Video')}}
             </h3>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/KtPSJAZk5Gg" frameborder="0" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/j1V2x7lxLpk" frameborder="0" allowfullscreen></iframe>
   
 
 
