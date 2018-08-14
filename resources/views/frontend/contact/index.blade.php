@@ -110,7 +110,7 @@
                         <div class="icon_box">
                             <i class="fa fa-map-marker "><span>Văn Phòng Đại Diện</span></i>
                         </div>
-                        <p class="infos pull-right">33/6 Lý Văn Phức phường Tân Định Quận 1 TP.HCM </p>
+                        <p class="infos pull-right">69 Đinh tiên Hoàng phường 2 T.p Bảo Lộc tỉnh Lâm Đồng</p>
                     </div>
                     <div class="info_sec">
                         <div class="icon_box">
