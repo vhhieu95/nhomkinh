@@ -21,7 +21,7 @@
 						</h2>
 						<ul class="cont_info">
 							<li><i class="fa fa-map-marker"></i>
-								<p>33/6 Lý Văn Phức phường Tân Định Quận 1 TP.HCM  </p>
+								<p>69 Đinh tiên Hoàng phường 2 T.p Bảo Lộc tỉnh Lâm Đồng </p>
 							</li>
 							<li><i class="fa fa-phone"></i>
 								<p> <a href="tel:407-546-2034"> Phone: 0906202195 </a> </p>
