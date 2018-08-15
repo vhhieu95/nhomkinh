@@ -27,7 +27,10 @@
 								<p> <a href="tel:407-546-2034"> Phone: 0906202195 </a> </p>
 							</li>
 							<li><i class="fa fa-envelope"></i>
-								<p> <a href="mailto:nguyenvanhau@gmail.com?Subject=template%20enquiry"> Email: nguyenvanhau@gmail.com </a> </p>
+								<p> <a href="mailto:nguyenvanhau@gmail.com?Subject=template%20enquiry"> Email: Toanthinhphat.hcm@gmail.com</a> </p>
+							</li>
+							<li><i class="fa fa-envelope"></i>
+								<p> <a href="#"> Mã số thuế: 0315194782 </a> </p>
 							</li>
 						</ul>
 
