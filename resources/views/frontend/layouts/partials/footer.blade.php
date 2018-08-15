@@ -21,16 +21,19 @@
 						</h2>
 						<ul class="cont_info">
 							<li><i class="fa fa-map-marker"></i>
-								<p>33/6 Lý Văn Phức phường Tân Định Quận 1 TP.HCM  </p>
+								<p>69 Đinh tiên Hoàng phường 2 T.p Bảo Lộc tỉnh Lâm Đồng </p>
 							</li>
 							<li><i class="fa fa-phone"></i>
 								<p> <a href="tel:407-546-2034"> Phone: 0906.202.195 </a> </p>
 							</li>
 							<li><i class="fa fa-envelope"></i>
-								<p> <a href="mailto:Housedoor.qtp@gmail.com?Subject=template%20enquiry"> Email: Housedoor.qtp@gmail.com </a> </p>
+								<p> <a href="mailto:Housedoor.qtp@gmail.com?Subject=template%20enquiry"> Email: Toanthinhphat.hcm@gmail.com </a> </p>
 							</li>
 							<li><i class="fa fa-facebook"></i>
 								<p> <a href="https://www.facebook.com/nhomkinhgovap/"> Nhôm Kính Cao Cấp Sài Gòn</a> </p>
+							</li>
+							<li><i class="fa fa-envelope"></i>
+								<p> <a href="#"> Mã số thuế: 0315194782 </a> </p>
 							</li>
 						</ul>
 
