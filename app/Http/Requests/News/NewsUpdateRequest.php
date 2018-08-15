@@ -24,9 +24,9 @@ class NewsUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100',
-            'description' => 'required|max:1000',
-            'content' => 'required|max:5000',
+            'title' => 'required',
+            'description' => 'required',
+            'content' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:10000',
         ];
     }

@@ -20,7 +20,8 @@
                 </div>
                 <div class="col-md-5 p0">
                   <div class="soc_icon">
-                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    {{-- <a href="#"> <i class="fa fa-facebook"></i> </a> --}}
+                    <div class="fb-share-button" data-href="{{ route('du-an.show', $project->slug ) }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Chia sẻ</a></div>
                   </div>
                 </div>
               </div>
@@ -35,7 +36,7 @@
                       <a href="tel: 0906202195"> <i class="fa fa-phone"></i>  0906202195 </a>
                   </p>
                   <p class="bedrom">
-                      <a href="mailto:nguyenvanhau@gmail.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> nguyenvanhau@gmail.com </a>
+                      <a href="mailto:Housedoor.qtp@gmail.com?Subject=Agent%20enquiry"> <i class="fa fa-envelope"></i> Housedoor.qtp@gmail.com </a>
                   </p>
                 </div>
               </div>

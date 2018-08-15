@@ -36,4 +36,6 @@ Route::group(['namespace' => 'Frontend'], function() {
     Route::get('lien-he', 'ContactController@create')->name('lien-he.create');
     Route::post('lien-he', 'ContactController@store')->name('lien-he.store');
     Route::get('gioi-thieu', 'AboutUsController@index')->name('gioi-thieu.index');
+    Route::get('tuyen-dung', 'AboutUsController@indexTuyenDung')->name('tuyen-dung.index');
+    Route::get('bao-gia', 'AboutUsController@indexBaoGia')->name('bao-gia.index');
 });

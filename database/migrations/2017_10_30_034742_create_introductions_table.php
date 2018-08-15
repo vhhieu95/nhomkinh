@@ -15,7 +15,7 @@ class CreateIntroductionsTable extends Migration
     {
         Schema::create('introductions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('title', 191);
             $table->string('slug')->unique();
             $table->text('content');
             $table->softDeletes();

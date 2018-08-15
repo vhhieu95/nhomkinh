@@ -24,9 +24,9 @@ class ProjectCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:100|unique:projects',
-            'description' => 'required|max:5000',
-            'content' => 'required|max:2000',
+            'title' => 'required|unique:projects',
+            'description' => 'required',
+            'content' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:10000',
         ];
     }

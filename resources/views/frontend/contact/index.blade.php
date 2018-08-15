@@ -116,7 +116,7 @@
                         <div class="icon_box">
                             <i class="fa fa-envelope-o"></i>
                         </div>
-                        <p class="infos"><a href="mailto:housedoor@gmail.com?Subject=template%20enquiry"> housedoor@gmail.com </a>
+                        <p class="infos"><a href="mailto:Housedoor.qtp@gmail.com?Subject=template%20enquiry"> Housedoor.qtp@gmail.com </a>
                         </p>
                     </div>
                     <div class="info_sec">
@@ -129,7 +129,7 @@
                         <div class="icon_box">
                             <i class="fa fa-facebook"></i>
                         </div>
-                        <p class="infos">facebook.com/housedoor</p>
+                        <p class="infos">facebook.com/nhomkinhgovap</p>
                     </div>
 
                 </div>

@@ -17,4 +17,14 @@ class AboutUsController extends Controller
         // $introduces = Introduction::select('id', 'title', 'content')->paginate(10);
         return view('frontend.about-us.index');
     }
+
+    public function indexTuyenDung()
+    {
+        return view('frontend.about-us.indexTuyenDung');
+    }
+
+    public function indexBaoGia()
+    {
+        return view('frontend.about-us.indexBaoGia');
+    }
 }
